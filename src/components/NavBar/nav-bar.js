@@ -1,14 +1,13 @@
 import React from 'react';
+import SignUpButton from "../SignUpButton/signup-button"
+import DemoButton from "../DemoButton/demo-button"
 
 export default function NavBar(props) {
     return (
         <nav className="navigation-menu">
-            <ul>
-                <li>Our mission</li>
-                <li>Our values</li>
-                <li>Our team</li>
-                <li>Our labradoodles</li>
-            </ul>
+           Easy Budget
+           <SignUpButton/>
+           <DemoButton/>
         </nav>
     );
 }
