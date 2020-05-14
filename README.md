@@ -1,5 +1,5 @@
 # Full-Stack-Capstone
-While enrolled in Thinkful's Web Development bootcamp I created this Capstone project using React, Node.js, HTML, CSS, Zeit, VS Code
+While enrolled in Thinkful's Web Development bootcamp I created this Capstone project using React, Node.js, HTML, CSS, Vercel(Zeit), heroku, VS Code
 
 # Thinkful Full Stack Capstone - Easy Budget App
 

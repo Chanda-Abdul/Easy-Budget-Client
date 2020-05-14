@@ -1,11 +1,16 @@
 import React from 'react';
+import NavBar from './components/NavBar/nav-bar';
+import MainPage from './components/MainPage/main-page';
+import { Switch, Route } from 'react-router-dom';
 
-function App() {
+export default function App(props) {
   return (
-    <main className='App'>
-      {/* content goes here */}
-    </main>
+    <div className="app">
+      <Switch>
+        <Route path="/" component={NavBar}/>
+        <Route path="/" component={MainPage}/>
+      </Switch>
+    </div>
   );
 }
 
-export default App;
