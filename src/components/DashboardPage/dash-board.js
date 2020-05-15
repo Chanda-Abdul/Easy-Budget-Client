@@ -6,7 +6,7 @@ export default function DashBoardPage(props) {
     return (
         <div>
             <section>
-            Hello
+            <h1>The Dashboard</h1>
                 </section>
                 <section><Stats/></section>
                 <section><Visuals/></section>
