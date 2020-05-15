@@ -33,9 +33,8 @@ export default function BudgetPage(props) {
         <form className="" onSubmit={(e) => this.handleSubmit(e)}>
           <fieldset name="expense-form">
             <legend>
-              Recurring Expenses
-              <br />
-              30% of your income
+              <h1>Recurring Expenses</h1>
+              <h3>30% of your income</h3>
             </legend>
 
             <label htmlFor="rent-expense-input">Rent/Mortgage:</label>
@@ -97,7 +96,6 @@ export default function BudgetPage(props) {
               placeholder="$25"
               onChange={(e) => this.updateWater(e.target.value)}
             />
-            <br />
           </fieldset>
         </form>
       </section>
@@ -105,13 +103,12 @@ export default function BudgetPage(props) {
       <section>
         <form className="" onSubmit={(e) => this.handleSubmit(e)}>
           <fieldset name="savings-form">
-          <legend>
-              Savings
-              <br />
-               at least 10% of your income
+            <legend>
+              <h1>Savings</h1>
+              <h3>at least 10% of your income</h3>
             </legend>
             <div className="input-form-group">
-              <label htmlFor="name">Total Monthly Savings:</label>
+              <h4><label htmlFor="name">Total Monthly Savings:</label>
               <input
                 type="number"
                 className="input__control"
@@ -119,8 +116,96 @@ export default function BudgetPage(props) {
                 id="total-savings"
                 placeholder="$400"
                 onChange={(e) => this.updateSavings(e.target.value)}
-              />
+              /></h4>
             </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <section>
+        <form className="" onSubmit={(e) => this.handleSubmit(e)}>
+          <fieldset name="expense-form">
+            <legend>
+              <h1> Discretionary Expenses</h1>
+              <h3>what's left over a.k.a the "Fun Stuff"</h3>
+            </legend>
+
+            <h4>
+              <label htmlFor="extra-expense-input">
+                Total Discretionary Income:
+              </label>
+              <input
+                type="number"
+                className="input__control"
+                name="discretionary-expense"
+                id="discretionary-expense"
+                placeholder="$2,400"
+                onChange={(e) => this.updateExtra(e.target.value)}
+              />
+            </h4>
+
+            <label htmlFor="transportation-expense-input">
+              Transportation:
+            </label>
+            <input
+              type="number"
+              className="input__control"
+              name="transportation-expense"
+              id="transportation-expense"
+              placeholder="$500"
+              onChange={(e) => this.updateTransportation(e.target.value)}
+            />
+            <br />
+            <label htmlFor="food-expense-input">Food:</label>
+            <input
+              type="number"
+              className="input__control"
+              name="food-expense"
+              id="food-expense"
+              placeholder="$500"
+              onChange={(e) => this.updateFood(e.target.value)}
+            />
+            <br />
+            <label htmlFor="shopping-expense-input">Shopping:</label>
+            <input
+              type="number"
+              className="input__control"
+              name="shopping-expense"
+              id="shopping-expense"
+              placeholder="$500"
+              onChange={(e) => this.updateShopping(e.target.value)}
+            />
+            <br />
+            <label htmlFor="travel-expense-input">Travel:</label>
+            <input
+              type="number"
+              className="input__control"
+              name="travel-expense"
+              id="travel-expense"
+              placeholder="$500"
+              onChange={(e) => this.updateTravel(e.target.value)}
+            />
+            <br />
+            <label htmlFor="home-expense-input">Home:</label>
+            <input
+              type="number"
+              className="input__control"
+              name="home-expense"
+              id="home-expense"
+              placeholder="$25"
+              onChange={(e) => this.updateHome(e.target.value)}
+            />
+            <br />
+            <label htmlFor="other-expense-input">Other:</label>
+            <input
+              type="number"
+              className="input__control"
+              name="other-expense"
+              id="other-expense"
+              placeholder="$25"
+              onChange={(e) => this.updateOther(e.target.value)}
+            />
+            <br />
           </fieldset>
         </form>
       </section>
@@ -128,82 +213,4 @@ export default function BudgetPage(props) {
       <section></section>
     </div>
   );
-}
-
-{
-  /* <section>
-        <p> */
-}
-{
-  /* <form className='budget-form'>
-            <div>
-              <label Htmlfor="first-name"><h5>Total Monthly Income:</label>
-              <input placeholder='$4,000' type="number" name='monthly-income' id='monthly-income' /></h5>
-            </div>
-        </form>
-        </p>
-      </section>
-      <section>
-        <header>
-            <h3>Recurring Expenses - 30% of your Income</h3>
-        </header>
-        <p><form class='expenses-form'>
-            <div>
-              <label for="recurring-expenses"><h5>Recurring Expenses:</label>
-              <input placeholder='$1,200' type="number" name='recurring-expenses' id='recurring-expenses' /></h5>
-            </div>
-            <div>
-              <label for="rent-expense"><h6>Rent/Mortgage:</label>
-              <input placeholder='$1,000' type="number" name='rent-expense' id='rent-expense' /><br>
-              <label for="electric-expense">Electricity:</label>
-              <input placeholder='$50' type="number" name='electric-expense' id='electric-expense' /><br>
-              <label for="gas-expense">Gas:</label>
-              <input placeholder='$25' type="number" name='gas-expense' id='gas-expense' /><br>
-              <label for="phone-expense">Phone:</label>
-              <input placeholder='$50' type="number" name='phone-expense' id='phone-expense' /><br>
-              <label for="internet-expense">Internet:</label>
-              <input placeholder='$50' type="number" name='internet-expense' id='internet-expense' /><br>
-              <label for="water-expense">Water:</label>
-              <input placeholder='$25' type="number" name='water-expense' id='water-expense' />
-              </h6>
-            </div>
-        </form></p>
-      </section>
-      <section>
-        <header>
-            <h3>Savings - 10% of your Income<br>*Pay yourself first*</h3>
-        </header>
-          <div>
-              <label for="savings"><h5>Monthly Savings:</label>
-              <input placeholder='$400' type="number" name='savings' id='savings' /></h5>
-            </div>
-      </section>
-      <section>
-        <header>
-            <h3>Discretionary Income <br>what's left over a.k.a. The Fun Stuff</h3>
-        </header>
-        <p><form class='expenses-discretionary'>
-            <div>
-              <label for="discretionary-expenses"><h5>Discretionary Income:</label>
-              <input placeholder='2,400' type="number" name='discretionary-expenses' id='discretionary-expenses' /></h5>
-            </div>
-            <div>
-              <label for="transport-expense"><h6>Transportation:</label>
-              <input placeholder='$500' type="number" name='transport-expense' id='transport-expense' /><br>
-              <label for="food-expense">Food:</label>
-              <input placeholder='$500' type="number" name='food-expense' id='food-expense' /><br>
-              <label for="shopping-expense">Shopping:</label>
-              <input placeholder='$500' type="number" name='shopping-expense' id='shopping-expense' /><br>
-              <label for="travel-expense">Travel:</label>
-              <input placeholder='$500' type="number" name='travel-expense' id='travel-expense' /><br>
-              <label for="home-expense">Home:</label>
-              <input placeholder='$250' type="number" name='home-expense' id='home-expense' /><br>
-              <label for="other-expense">Other:</label>
-              <input placeholder='$150' type="number" name='other-expense' id='other-expense' />
-              </h6>
-            </div>
-        </form></p> */
-}
-{
-  /* </section>   */
 }
