@@ -79,3 +79,22 @@ img.right {
   display: flex;
   justify-content: space-around;
 }
+
+.topnav-right {
+  float: right;
+  padding: 5px;
+}
+
+.topnav-left {
+  float: left;
+  padding: 5px;
+}
+
+.stat-box {
+  width: 200px;
+  height: auto;
+  display: inline-block;
+  margin: 30px;
+  padding: 15px;
+  border: 2px solid grey;
+}
