@@ -1,4 +1,6 @@
 import React from "react";
+import LearnMoreButton from "../LearnMoreButton/learn-more-button";
+import UpdateBudgetButton from "../UpdateBudgetButton/update-budget-button";
 
 export default function BudgetPage(props) {
   return (
@@ -108,15 +110,17 @@ export default function BudgetPage(props) {
               <h3>at least 10% of your income</h3>
             </legend>
             <div className="input-form-group">
-              <h4><label htmlFor="name">Total Monthly Savings:</label>
-              <input
-                type="number"
-                className="input__control"
-                name="total-savings"
-                id="total-savings"
-                placeholder="$400"
-                onChange={(e) => this.updateSavings(e.target.value)}
-              /></h4>
+              <h4>
+                <label htmlFor="name">Total Monthly Savings:</label>
+                <input
+                  type="number"
+                  className="input__control"
+                  name="total-savings"
+                  id="total-savings"
+                  placeholder="$400"
+                  onChange={(e) => this.updateSavings(e.target.value)}
+                />
+              </h4>
             </div>
           </fieldset>
         </form>
@@ -209,7 +213,10 @@ export default function BudgetPage(props) {
           </fieldset>
         </form>
       </section>
-
+      <section>
+        <UpdateBudgetButton />
+        <LearnMoreButton />
+      </section>
       <section></section>
     </div>
   );
