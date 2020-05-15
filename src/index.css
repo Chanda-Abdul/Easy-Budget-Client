@@ -107,3 +107,9 @@ img.right {
   padding: 15px;
   border: 2px solid grey;
 }
+
+input {
+  width: 10em;
+  padding: 5px;
+  margin: 10px;
+}
