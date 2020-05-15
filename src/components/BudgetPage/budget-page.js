@@ -1,16 +1,141 @@
-import React from 'react';
-
+import React from "react";
 
 export default function BudgetPage(props) {
-    return (
-        <div className="budget-page">
+  return (
+    <div className="budget-page">
       <header className="banner">
         <h1>Your Budget</h1>
-        <h2>just imagine.</h2>
+        <section>
+          <h2>just imagine.</h2>
+        </section>
       </header>
-      {/* <section>
-        <p> */}
-            {/* <form className='budget-form'>
+
+      <section>
+        <form className="" onSubmit={(e) => this.handleSubmit(e)}>
+          <fieldset name="budget-form">
+            <legend>An overview of your budget</legend>
+            <div className="input-form-group">
+              <label htmlFor="name">Total Monthly Income:</label>
+              <input
+                type="number"
+                className="input__control"
+                name="total-income"
+                id="total-income"
+                placeholder="$4,000"
+                onChange={(e) => this.updateIncome(e.target.value)}
+              />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <section>
+        <form className="" onSubmit={(e) => this.handleSubmit(e)}>
+          <fieldset name="expense-form">
+            <legend>
+              Recurring Expenses
+              <br />
+              30% of your income
+            </legend>
+
+            <label htmlFor="rent-expense-input">Rent/Mortgage:</label>
+            <input
+              type="number"
+              className="input__control"
+              name="rent-expense"
+              id="rent-expense"
+              placeholder="$1,200"
+              onChange={(e) => this.updateRent(e.target.value)}
+            />
+            <br />
+            <label htmlFor="electric-expense-input">Electricity:</label>
+            <input
+              type="number"
+              className="input__control"
+              name="electric-expense"
+              id="electric-expense"
+              placeholder="$50"
+              onChange={(e) => this.updateElectric(e.target.value)}
+            />
+            <br />
+            <label htmlFor="gas-expense-input">Gas:</label>
+            <input
+              type="number"
+              className="input__control"
+              name="gas-expense"
+              id="gas-expense"
+              placeholder="$25"
+              onChange={(e) => this.updateGas(e.target.value)}
+            />
+            <br />
+            <label htmlFor="Phone-expense-input">Phone:</label>
+            <input
+              type="number"
+              className="input__control"
+              name="phone-expense"
+              id="phone-expense"
+              placeholder="$50"
+              onChange={(e) => this.updatePhone(e.target.value)}
+            />
+            <br />
+            <label htmlFor="internet-expense-input">Internet:</label>
+            <input
+              type="number"
+              className="input__control"
+              name="internet-expense"
+              id="internet-expense"
+              placeholder="$50"
+              onChange={(e) => this.updateInternet(e.target.value)}
+            />
+            <br />
+            <label htmlFor="water-expense-input">Water:</label>
+            <input
+              type="number"
+              className="input__control"
+              name="water-expense"
+              id="water-expense"
+              placeholder="$25"
+              onChange={(e) => this.updateWater(e.target.value)}
+            />
+            <br />
+          </fieldset>
+        </form>
+      </section>
+
+      <section>
+        <form className="" onSubmit={(e) => this.handleSubmit(e)}>
+          <fieldset name="savings-form">
+          <legend>
+              Savings
+              <br />
+               at least 10% of your income
+            </legend>
+            <div className="input-form-group">
+              <label htmlFor="name">Total Monthly Savings:</label>
+              <input
+                type="number"
+                className="input__control"
+                name="total-savings"
+                id="total-savings"
+                placeholder="$400"
+                onChange={(e) => this.updateSavings(e.target.value)}
+              />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <section></section>
+    </div>
+  );
+}
+
+{
+  /* <section>
+        <p> */
+}
+{
+  /* <form className='budget-form'>
             <div>
               <label Htmlfor="first-name"><h5>Total Monthly Income:</label>
               <input placeholder='$4,000' type="number" name='monthly-income' id='monthly-income' /></h5>
@@ -77,8 +202,8 @@ export default function BudgetPage(props) {
               <input placeholder='$150' type="number" name='other-expense' id='other-expense' />
               </h6>
             </div>
-        </form></p> */}
-      {/* </section>   */}
-        </div>
-    );
+        </form></p> */
+}
+{
+  /* </section>   */
 }

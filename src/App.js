@@ -15,7 +15,7 @@ export default function App(props) {
         <Route exact path="/" component={MainPage}/>
       </Switch>
       <Switch>
-        <Route exact path="/budget" component={BudgetPage}/>
+        <Route exact path="/dashboard" component={BudgetPage}/>
       </Switch>
       <Switch>
         <Route path="/" component={Footer}/>
