@@ -9,6 +9,7 @@ While enrolled in Thinkful's Web Development bootcamp I created this Capstone pr
 Chanda Hubbard
 
 [>Live URL<](https://easy-budget.now.sh)
+[Link to API](https://github.com/ChandaHubbard/easy-budget-app-api)
 
 
 
@@ -25,7 +26,7 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 
 ## Built with:
 
-#### <br/>APIs <br/>&nbsp;&nbsp;&nbsp; [EatStreet API](https://developers.eatstreet.com/endpoint/search)  <br/>&nbsp;&nbsp;&nbsp; [TasteDive Movie API ](https://tastedive.com/read/api)<br/>jQuery <br/>JavaScript <br/>HTML <br/>CSS <br/>   Visual Studio Code <br/>Git Hub
+<!-- #### <br/>APIs <br/>&nbsp;&nbsp;&nbsp; [EatStreet API](https://developers.eatstreet.com/endpoint/search)  <br/>&nbsp;&nbsp;&nbsp; [TasteDive Movie API ](https://tastedive.com/read/api)<br/>jQuery <br/>JavaScript <br/>HTML <br/>CSS <br/>   Visual Studio Code <br/>Git Hub -->
 
 
 
@@ -41,7 +42,7 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 
 ### Version MVP (Minimal Viable Product)
 
-[>MVP<](https://chandahubbard.github.io/API%20Hack%20Capstone/index.html)
+<!-- [>MVP<](https://chandahubbard.github.io/API%20Hack%20Capstone/index.html) -->
 
 #### Image of MVP Title Screen
 
