@@ -1,5 +1,5 @@
 import React from "react";
-import SignUpButton from "../signup-button";
+import SignUpButton from "../SignUpButton/signup-button";
 import DemoButton from "../DemoButton/demo-button";
 
 export default function NavBar(props) {
