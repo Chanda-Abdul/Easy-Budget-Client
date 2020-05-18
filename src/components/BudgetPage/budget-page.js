@@ -1,6 +1,7 @@
 import React from "react";
 import LearnMoreButton from "../LearnMoreButton/learn-more-button";
 import UpdateBudgetButton from "../UpdateBudgetButton/update-budget-button";
+import BudgetTable from "../BudgetTable/budget-table"
 
 export default function BudgetPage(props) {
   return (
@@ -11,7 +12,9 @@ export default function BudgetPage(props) {
           <h2>just imagine.</h2>
         </section>
       </header>
-
+<section>
+  <BudgetTable/>
+</section>
       <section>
         <form className="" onSubmit={(e) => this.handleSubmit(e)}>
           <fieldset name="budget-form">

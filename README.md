@@ -9,6 +9,8 @@ While enrolled in Thinkful's Web Development bootcamp I created this Capstone pr
 Chanda Hubbard
 
 [>Live URL<](https://easy-budget.now.sh)
+
+
 [Link to API](https://github.com/ChandaHubbard/easy-budget-app-api)
 
 
