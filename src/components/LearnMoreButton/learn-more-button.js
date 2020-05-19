@@ -1,9 +1,10 @@
 import React from 'react';
+import history from '../../history'
 
 export default function LearnMoreButton(props) {
     return (
         <div className="button-learn">
-            <button>Learn More</button>
+            <button onClick={() => history.push('./education')}>Learn More</button>
         </div>
     );
 }

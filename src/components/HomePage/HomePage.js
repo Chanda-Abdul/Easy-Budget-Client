@@ -4,9 +4,9 @@ import HowTo from "../HowToSection/how-to-section";
 import ProgressSection from "../ProgressSection/progress-section";
 import GoToBudgetButton from "../GoToBudgetButton/go-to-budget-button";
 
-export default function MainPage(props) {
+export default function HomePage(props) {
   return (
-    <div className="main-page">
+    <div className="home-page">
       <section></section>
       <section>
         <h1>Make budgeting easy</h1>
