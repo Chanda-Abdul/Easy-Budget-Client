@@ -1,11 +1,11 @@
 import React from 'react';
+import './footer.css'
 
 
 export default function Footer(props) {
     return (
-        <footer className="content-info">Created By Chanda Hubbard<br/>
-        Copyright 2020<br/>
-        All Rights reserved
+        <footer className="content-info">
+        Copyright © 2020 By Chanda Hubbard. All rights reserved.
       </footer>
     );
 }

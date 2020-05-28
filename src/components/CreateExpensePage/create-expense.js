@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function UpdatePage(props) {
+export default function CreateExpensePage(props) {
   return (
     <div>
       <section></section>

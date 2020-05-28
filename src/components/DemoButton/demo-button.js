@@ -5,7 +5,9 @@ import history from '../../history'
 export default function DemoButton(props) {
     return (
         <div className="button-demo">
-            <button  onClick={() => history.push('./Dashboard')}>Demo</button>
+            <button  
+            className="myButton"
+            onClick={() => history.push('./Dashboard')}>Demo</button>
         </div>
     );
 }

@@ -7,7 +7,7 @@ import GoToBudgetButton from "../GoToBudgetButton/go-to-budget-button";
 export default function HomePage(props) {
   return (
     <div className="home-page">
-      <section></section>
+      <section id="hero"></section>
       <section>
         <h1>Make budgeting easy</h1>
       </section>
@@ -30,7 +30,7 @@ export default function HomePage(props) {
         <ProgressSection />
         <GoToBudgetButton />
       </section>
-      <section></section>
+      <section id="hero"></section>
     </div>
   );
 }

@@ -1,0 +1,18 @@
+footer {
+    position: relative;
+    background-color: #8dc53f;
+    color: #004138;
+    font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+    font-size: 1.25rem;
+    padding: 1% 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* z-index: 10; */
+    /* padding: 1%; */
+    width: 100%;
+  }
+  
+  
+ 

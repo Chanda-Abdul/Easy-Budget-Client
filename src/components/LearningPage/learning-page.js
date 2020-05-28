@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function EducationPage(props) {
+export default function LearningPage(props) {
   return (
     <div>
       <section>
