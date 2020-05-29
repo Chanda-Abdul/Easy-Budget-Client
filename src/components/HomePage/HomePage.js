@@ -4,7 +4,12 @@ import HowTo from "../HowToSection/how-to-section";
 import ProgressSection from "../ProgressSection/progress-section";
 import GoToBudgetButton from "../GoToBudgetButton/go-to-budget-button";
 
+
+
+
+
 export default function HomePage(props) {
+ 
   return (
     <div className="home-page">
       <section id="hero"></section>

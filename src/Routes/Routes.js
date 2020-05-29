@@ -7,12 +7,11 @@ import DashboardPage from "../components/DashboardPage/dash-board";
 import CreateExpensePage from "../components/CreateExpensePage/create-expense";
 import LearningPage from "../components/LearningPage/learning-page";
 
-import history from "../history";
 
 export default class Routes extends Component {
   render() {
     return (
-      <Router history={history}>
+      
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/budget" component={BudgetPage} />
@@ -20,7 +19,7 @@ export default class Routes extends Component {
           <Route exact path="/create" component={CreateExpensePage} />
           <Route exact path="/learn" component={LearningPage} />
         </Switch>
-      </Router>
+      
     );
   }
 }

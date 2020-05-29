@@ -40,7 +40,7 @@ h2 {
   font-weight: 600;
 }
 
-h3 {
+h3, h5 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 500;
 }
@@ -50,7 +50,7 @@ h4 {
   font-weight: 400;
 }
 
-h5 {
+h6 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
 }

@@ -3,7 +3,21 @@ import LearnMoreButton from "../LearnMoreButton/learn-more-button";
 import UpdateBudgetButton from "../UpdateBudgetButton/update-budget-button";
 import BudgetTable from "../BudgetTable/budget-table"
 
+
+function getAPI() {
+  return fetch('http://localhost:8080/expenses')
+  .then((res) => res.json()).then((data) => {
+    console.log(data.expenses, "data")
+    return data.expenses
+  }).catch((error) => {
+    console.log(error, "error")
+  });
+}
+
+
+
 export default function BudgetPage(props) {
+let budgetExpenses = getAPI();
   return (
     <div className="budget-page">
       <header className="banner">
@@ -13,7 +27,7 @@ export default function BudgetPage(props) {
         </section>
       </header>
 <section>
-  <BudgetTable/>
+<BudgetTable expenses={budgetExpenses} />
 </section>
       <section>
         <form className="" onSubmit={(e) => this.handleSubmit(e)}>

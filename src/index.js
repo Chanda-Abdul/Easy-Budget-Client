@@ -6,17 +6,17 @@ import Footer from "./components/Footer/footer"
 import Routes from "./Routes/Routes";
 import App from "./App";
 import "./index.css";
-
-
+import history from "./history";
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
-  <Router>
+  <BrowserRouter history={history}>
     <div className="App">
       <Navigation />
       <App />
       <Routes />
       <Footer/>
     </div>
-  </Router>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
