@@ -44,7 +44,9 @@ this.setState({
         <tr>
           <td>{moment(expense.date).format('MMMM D, YYYY')}</td>
         <td>{expense.name}</td>
-        <td>{expense.amount}</td>
+        <td 
+        // className="right"
+        >{expense.amount}</td>
         <td>{expense.type}</td>
         <td>{expense.category}</td>
         </tr>

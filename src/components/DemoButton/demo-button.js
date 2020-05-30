@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import history from '../../history'
+import { Link } from 'react-router-dom'
 
 
 export default function DemoButton(props) {
     return (
         <div className="button-demo">
-            <button  
+            <Link to="/Dashboard"><button  
             className="myButton"
-            onClick={() => history.push('./Dashboard')}>Demo</button>
+            >Demo</button>
+            </Link>
         </div>
     );
 }

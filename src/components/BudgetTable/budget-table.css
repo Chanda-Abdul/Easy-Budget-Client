@@ -1,5 +1,5 @@
 table, td {
-    border: 1px solid black;
+    border: 1px solid #ADCE80;
 }
 /* Table */
 
@@ -11,23 +11,26 @@ table {
     position: static;
     width: 80%;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 00;
+    font-weight: 400;
+    text-align: right;
   }
   
   thead th {
-    background: #88CCF1;
+    background: #ADCE80;
     color: black;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
+    
   }
   
   tr {
     background: #f4f7f8;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 5px solid #ADCE80;
     margin-bottom: 5px;
+    
   }
   
   th, td {
@@ -37,6 +40,11 @@ table {
     text-align: left;
     width: 33.3333%;
     color: black !important;
+    text-align: right;
   }
 
-  
+  /* .right {
+    text-align: right;
+    border: none;
+  }
+   */

@@ -1,11 +1,11 @@
 import React from 'react';
-import history from '../../history'
+import { Link } from 'react-router-dom'
 
 export default function GoToBudgetButton(props) {
     return (
         <div className="button-demo">
-            <button className="myButton"
-            onClick={() => history.push('./budget')}>Review your Budget</button>
+            <Link to="/Budget">
+            <button className="myButton">Review your Budget</button></Link>
         </div>
     );
 }
