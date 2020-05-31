@@ -14,13 +14,14 @@ export default class BudgetTable extends React.Component {
     }
   }
 
-  async componentDidMount() {
+async componentDidMount() {
 let newExpenses = await this.props.expenses;
 this.setState({
   expenses: newExpenses
 })
 }
-  render() {
+
+render() {
     return (
       <div>
         <table>
@@ -34,28 +35,22 @@ this.setState({
               <th scope="col">Category</th>
             </tr>
           </thead>
-          <tbody>
-            
+          <tbody> 
               {/* Row 2 */}
               
-              {
-    this.state.expenses.map(expense => {
+              {this.state.expenses.map(expense => {
       return (
         <tr>
-          <td>{moment(expense.date).format('MMMM D, YYYY')}</td>
+          <td>{ moment(expense.date).format('MMMM D, YYYY') }</td>
         <td>{expense.name}</td>
-        <td 
-        // className="right"
-        >{expense.amount}</td>
+        <td>{expense.amount}</td>
         <td>{expense.type}</td>
         <td>{expense.category}</td>
         </tr>
       )
       }) 
   }
-            
-      
-          </tbody>
+            </tbody>
           {/* Table footer */}
           <tfoot>
           <tr>

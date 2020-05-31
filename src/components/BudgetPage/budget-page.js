@@ -5,7 +5,9 @@ import BudgetTable from "../BudgetTable/budget-table"
 
 
 function getAPI() {
-  return fetch('https://git.heroku.com/fast-garden-40399.git')
+  return fetch(
+    // 'https://git.heroku.com/fast-garden-40399.git'
+    'http://localhost:8080/expenses')
   .then((res) => res.json()).then((data) => {
     console.log(data.expenses, "data")
     return data.expenses
