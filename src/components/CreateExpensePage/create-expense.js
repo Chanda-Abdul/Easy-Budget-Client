@@ -50,7 +50,8 @@ export default function CreateExpensePage(props) {
                 efficitur aliquet consequat. <br />
                 Quisque et velit aliquam libero pretium tincidunt eget eget est.
               </p>
-              <button className="add-expense-button">Add Expense</button>
+              <button className="myButton">Add Expense</button>
+              <button className="myButton">Remove Expense</button>
             </fieldset>
           </form>
         </section>

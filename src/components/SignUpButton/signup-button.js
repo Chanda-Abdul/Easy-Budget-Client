@@ -9,9 +9,9 @@ export default class SignUpButton extends React.Component {
   render() {
     return (
       <div>
-        <button 
-        className="myButton"
-        onClick={this.signup}>Sign Up</button>
+        <button className="myButton" onClick={this.signup}>
+          Sign Up
+        </button>
       </div>
     );
   }

@@ -55,26 +55,44 @@ h6 {
   font-weight: 300;
 }
 
-header {
+/* header {
   padding: 12% 0;
-}
+} */
 
 section {
-  
-  padding: 6% 0;
-
+  padding: 5% 0;
 }
 
 
-#hero {background-image:
+#hero {
+  background-image:
   url("./images/moneybackground.png");
   background-size: cover;
-	padding: 250px 0;
-	/* margin: 30px; */
+	padding: 550px 0;
+  color: white;
+  font-size: 2rem;
+
 }
-section:nth-child(even) {
+
+#hero-footer {
+  background-image:
+  url("./images/moneybackground.png");
+  background-size: cover;
+	padding: 225px 0;
+  color: white;
+}
+
+.dark-mode {
   background-color: #004138;
   color: white;
+}
+.medium-mode {
+  background-color: #8dc53f;
+  color: white;
+}
+.light-mode {
+  background-color: white;
+  color: #3A452B;
 }
 
 

@@ -14,11 +14,18 @@ export default class BudgetTable extends React.Component {
     }
   }
 
-async componentDidMount() {
-let newExpenses = await this.props.expenses;
-this.setState({
-  expenses: newExpenses
-})
+// async componentDidMount() {
+// let newExpenses = await this.props.expenses;
+// this.setState({
+//   expenses: newExpenses
+// })
+// }
+
+componentDidMount() {
+  let newExpenses = this.props.expenses;
+  this.setState({
+    expense: newExpenses
+  })
 }
 
 render() {
@@ -33,6 +40,7 @@ render() {
               <th scope="col">Amount</th>
               <th scope="col">Type</th>
               <th scope="col">Category</th>
+              <th scope="col"> </th>
             </tr>
           </thead>
           <tbody> 
@@ -46,13 +54,14 @@ render() {
         <td>{expense.amount}</td>
         <td>{expense.type}</td>
         <td>{expense.category}</td>
+        <td><button className="myButton">Delete</button></td>
         </tr>
       )
       }) 
   }
             </tbody>
           {/* Table footer */}
-          <tfoot>
+          {/* <tfoot>
           <tr>
               <td></td>
               <td></td>
@@ -60,7 +69,7 @@ render() {
               <td></td>
               <td></td>
           </tr>
-          </tfoot>
+          </tfoot> */}
         </table>
       </div>
     );

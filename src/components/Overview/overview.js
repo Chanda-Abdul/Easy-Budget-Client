@@ -1,4 +1,5 @@
 import React from 'react';
+import savings from "../../images/savings.png"
 
 export default function Overview(props) {
     return (
@@ -6,10 +7,10 @@ export default function Overview(props) {
         
                 <h1>An entirely better way to budget</h1>
                 <p>
-                <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081" className="image" height="" width=""/>
-            <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081" className="image" height="" width=""/>
-            <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081" className="image" height="" width=""/>
-                    </p>
+                <img src={savings} className="image" height="250" width=""/>
+                <img src={savings} className="image" height="250" width=""/> 
+                <img src={savings} className="image" height="250" width=""/>
+                </p>
         </div>
     );
 }

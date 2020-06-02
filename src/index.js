@@ -4,13 +4,14 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navigation from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/footer"
 import Routes from "./Routes/Routes";
+import { BrowserRouter } from 'react-router-dom'
 import App from "./App";
 import "./index.css";
-import history from "./history";
-import { BrowserRouter } from 'react-router-dom'
+// import ReactDOM from 'react-dom'
+
 
 ReactDOM.render(
-  <BrowserRouter history={history}>
+  <BrowserRouter>
     <div className="App">
       <Navigation />
       <App />

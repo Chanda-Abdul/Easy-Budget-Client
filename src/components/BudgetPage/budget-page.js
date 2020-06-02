@@ -4,24 +4,16 @@ import UpdateBudgetButton from "../UpdateBudgetButton/update-budget-button";
 import BudgetTable from "../BudgetTable/budget-table"
 
 
-function getAPI() {
-  return fetch(
-    // 'https://git.heroku.com/fast-garden-40399.git'
-    'http://localhost:8080/expenses')
-  .then((res) => res.json()).then((data) => {
-    console.log(data.expenses, "data")
-    return data.expenses
-  }).catch((error) => {
-    console.log(error, "error")
-  });
-}
+
+
+
 
 
 
 export default function BudgetPage(props) {
-let budgetExpenses = getAPI();
   return (
     <div className="budget-page">
+      <section id="hero"/>
       <header className="banner">
         <h1>Your Budget</h1>
         <section>
@@ -29,7 +21,9 @@ let budgetExpenses = getAPI();
         </section>
       </header>
 <section>
-<BudgetTable expenses={budgetExpenses} />
+<BudgetTable 
+// expenses={budgetExpenses}
+ />
 </section>
       <section>
         <form className="" onSubmit={(e) => this.handleSubmit(e)}>

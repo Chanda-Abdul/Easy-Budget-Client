@@ -1,11 +1,12 @@
 import React from 'react'
+import savings from "../../images/savings.png"
 
 export default function Visuals(props) {
     return (
         <div>
              <div>
             <div className="visual-box">
-            <img src="https://sta.laits.utexas.edu/wp-content/uploads/files/charts.png" width="400px" />
+            <img src={savings} width="400px" />
             <br/>Insert usless graph about your budget here
             </div>
             <div className="visual-box">
