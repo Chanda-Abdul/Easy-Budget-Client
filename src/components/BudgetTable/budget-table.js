@@ -5,14 +5,18 @@ import moment from "moment"
 
 
 export default class BudgetTable extends React.Component {
-  //console.log(props.expenses, "budget table props")
+  
   //let expenses = await  props.expenses;
   constructor(props) {
     super(props);
+    console.log(this.props.payload, "payload")
     this.state = {
-      expenses: []
+      expenses: [],
+      handleDelete: () => {console.log('No delete')}
     }
   }
+
+  // console.log(props.expenses, "budget table props");
 
 // async componentDidMount() {
 // let newExpenses = await this.props.expenses;
@@ -22,10 +26,17 @@ export default class BudgetTable extends React.Component {
 // }
 
 componentDidMount() {
-  let newExpenses = this.props.expenses;
-  this.setState({
-    expense: newExpenses
-  })
+  if(this.props.payload) {
+    let newExpenses = this.props.payload.expenses;
+    let handleDelete = this.props.payload.handleDeleteExpense; 
+    this.setState({
+      expenses: newExpenses,
+      handleDelete
+    })
+  } 
+ 
+  // console.log(this.state.props.payload, "payload")
+  // console.log(this.props.payload.expenses, "payload.expenses")
 }
 
 render() {
@@ -54,13 +65,13 @@ render() {
         <td>{expense.amount}</td>
         <td>{expense.type}</td>
         <td>{expense.category}</td>
-        <td><button className="myButton">Delete</button></td>
+        <td><button onClick={() => this.state.handleDelete(expense.id)} className="myButton">Delete</button></td>
         </tr>
       )
       }) 
   }
             </tbody>
-          {/* Table footer */}
+          {/* Table footer */ }
           {/* <tfoot>
           <tr>
               <td></td>

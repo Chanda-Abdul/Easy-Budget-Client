@@ -1,14 +1,16 @@
 import React from "react";
+import goals from "../../images/goals.png"
+
 
 export default function HowTo(props) {
   return (
     <div>
       <h2>How it works</h2>
       <img
-        src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081"
-        class="right"
-        height="250px"
-        width="250px"
+        src={goals}
+        className="right"
+        height="250em"
+  
       />
       <h5>Intuitive Design</h5>
       <br />

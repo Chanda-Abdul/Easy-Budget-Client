@@ -1,6 +1,7 @@
 import React from 'react'
 import savings from "../../images/savings.png"
 
+
 export default function Visuals(props) {
     return (
         <div>

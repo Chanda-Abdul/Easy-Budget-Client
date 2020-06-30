@@ -25,10 +25,11 @@ export default function HomePage(props) {
       <section className="medium-mode">
         {" "}
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <h2>Acheive Financial Freedom</h2>
+          <h3>h3</h3>
+          <h4>h4</h4>
         </p>
-        <GoToBudgetButton />
+        
       </section>
 
       <section className="light-mode">
@@ -37,6 +38,7 @@ export default function HomePage(props) {
       <section className="dark-mode">
         <HowTo />
       </section>
+      
       <section className="medium-mode">
         <ProgressSection />
         <GoToBudgetButton />

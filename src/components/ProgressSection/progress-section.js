@@ -8,8 +8,9 @@ export default function ProgressSection(props) {
       <h5>Easy Budget Dashboard</h5>
       <br /> <img
         src={progress}
-        class="left"
-        height="200em"/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        className="left"
+        height="250em"/> 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum
       nunc aliquet bibendum enim facilisis gravida neque. Enim blandit volutpat
       maecenas volutpat blandit aliquam etiam erat velit. Facilisi cras

@@ -1,8 +1,5 @@
-import React from 'react'
+import React from "react";
 
-const ExpenseContext = React.createContext({
-    expenses: [],
-    expenseUpdate: () => {},
-})
+const ExpenseContext = React.createContext();
 
-export default ExpenseContext
+export default ExpenseContext;
