@@ -2,7 +2,7 @@ import React from "react";
 import LearnMoreButton from "../LearnMoreButton/learn-more-button";
 import UpdateBudgetButton from "../UpdateBudgetButton/update-budget-button";
 import BudgetTable from "../BudgetTable/budget-table";
-import ExpenseContext from "../../ExpenseContext";
+import ExpenseContext from "../../contexts/ExpenseContext";
 
 export default function BudgetPage() {
   //function for consumer

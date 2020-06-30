@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-
 import HomePage from "../components/HomePage/HomePage";
 import BudgetPage from "../components/BudgetPage/budget-page";
-import DashboardPage from "../components/DashboardPage/dash-board";
+import DashboardPage from "../components/DashboardPage/DashboardPage";
 import CreateExpensePage from "../components/CreateExpensePage/create-expense";
 import LearningPage from "../components/LearningPage/learning-page";
 import NotFoundPage from "../components/NotFound/not-found"

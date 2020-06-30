@@ -1,7 +1,7 @@
 import React from "react";
 import config from "./config";
 // import Routes from './Routes/Routes';
-import ExpenseContext from "./ExpenseContext";
+import ExpenseContext from "./contexts/ExpenseContext";
 import BudgetPage from "./components/BudgetPage/budget-page";
 
 export default class App extends React.Component {

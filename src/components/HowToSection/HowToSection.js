@@ -2,12 +2,14 @@ import React from "react";
 import goals from "../../images/goals.png"
 
 
-export default function HowTo(props) {
-  return (
+export default class HowTo extends React.Component{
+  render() {
+    return (
     <div>
       <h2>How it works</h2>
       <img
         src={goals}
+        alt="#"
         className="right"
         height="250em"
   
@@ -21,5 +23,6 @@ export default function HowTo(props) {
       maecenas volutpat blandit aliquam etiam erat velit. Facilisi cras
       fermentum odio eu. Et malesuada fames ac turpis egestas.
     </div>
-  );
+  )
+}
 }

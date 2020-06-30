@@ -1,13 +1,16 @@
 import React from "react";
 import progress from "../../images/marathon.png"
 
-export default function ProgressSection(props) {
-  return (
+export default class ProgressSection extends React.Component {
+  render() 
+  {
+    return (
     <div>
       <h3>Visible Progress</h3>
       <h5>Easy Budget Dashboard</h5>
       <br /> <img
         src={progress}
+        alt="#"
         className="left"
         height="250em"/> 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -16,5 +19,6 @@ export default function ProgressSection(props) {
       maecenas volutpat blandit aliquam etiam erat velit. Facilisi cras
       fermentum odio eu. Et malesuada fames ac turpis egestas.
     </div>
-  );
+  )
+}
 }

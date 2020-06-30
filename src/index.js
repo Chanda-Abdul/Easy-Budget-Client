@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import Navigation from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/footer"
-import Routes from "./Routes/Routes";
+import Routes from "./routes/Routes";
 import App from "./App";
 import "./index.css";
 // import {
