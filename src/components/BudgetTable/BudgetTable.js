@@ -16,14 +16,7 @@ export default class BudgetTable extends React.Component {
     }
   }
 
-  // console.log(props.expenses, "budget table props");
 
-// async componentDidMount() {
-// let newExpenses = await this.props.expenses;
-// this.setState({
-//   expenses: newExpenses
-// })
-// }
 
 componentDidMount() {
   if(this.props.payload) {
@@ -35,8 +28,6 @@ componentDidMount() {
     })
   } 
  
-  // console.log(this.state.props.payload, "payload")
-  // console.log(this.props.payload.expenses, "payload.expenses")
 }
 
 render() {

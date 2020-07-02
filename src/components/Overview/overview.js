@@ -1,6 +1,6 @@
 import React from 'react';
 import invest from "../../images/invest.png"
-import GoToBudgetButton from "../GoToBudgetButton/go-to-budget-button"
+import GoToBudgetButton from "../buttons/GoToBudgetButton/GoToBudgetButton"
 
 export default function Overview(props) {
     return (

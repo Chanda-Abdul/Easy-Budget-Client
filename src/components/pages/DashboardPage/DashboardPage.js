@@ -1,8 +1,8 @@
 import React from "react";
-import Visuals from "../Visuals/Visuals";
-import Stats from "../Stats/stats";
-import UpdateBudgetButton from "../UpdateBudgetButton/update-budget-button";
-import LearnMoreButton from "../LearnMoreButton/learn-more-button";
+import Visuals from "../../Visuals/Visuals";
+import Stats from "../../Stats/stats";
+import UpdateBudgetButton from "../../buttons/UpdateBudgetButton/UpdateBudgetButton";
+import LearnMoreButton from "../../buttons/LearnMoreButton/LearnMoreButton";
 
 export default class DashBoardPage extends React.Component {
   render() {

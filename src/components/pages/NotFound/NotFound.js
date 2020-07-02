@@ -1,5 +1,5 @@
 import React from 'react'
-import notfound from '../../images/pagenotfound.png'
+import notfound from '../../../images/pagenotfound.png'
 
 export default class NotFoundPage extends React.Component {
     render() {

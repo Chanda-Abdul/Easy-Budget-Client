@@ -1,7 +1,8 @@
 import React from "react";
-// import Routes from './Routes/Routes';
 import ExpenseContext from "./contexts/ExpenseContext";
-import BudgetPage from "./components/BudgetPage/BudgetPage";
+import Routes from './routes/Routes'
+import Navigation from "./components/NavBar/NavBar"
+import Footer from './components/Footer/Footer'
 import ExpenseService from "./api/fast-garden"
 
 export default class App extends React.Component {
@@ -23,23 +24,32 @@ export default class App extends React.Component {
   render() {
     const { expenses } = this.state;
    
-    const page = () => {
-      if (expenses && expenses.length > 0) {
-        return (
-          <ExpenseContext.Provider
-            value={{
-              expenses,
-              handleDeleteExpense: this.handleDeleteExpense,
-            }}
-          >
-            <BudgetPage expenses={expenses}/>
-          </ExpenseContext.Provider>
-        );
-      } else {
-        return <h1>No context</h1>;
-      }
-    };
-    return <div>{page()}</div>;
+    // const page = () => {
+    //   if (expenses && expenses.length > 0) {
+        
+    //     return (
+    //       <ExpenseContext.Provider
+    //         value={{
+    //           expenses,
+    //           handleDeleteExpense: this.handleDeleteExpense,
+    //         }}
+    //       >
+    //         <BudgetPage expenses={expenses}/>
+    //       </ExpenseContext.Provider>
+    //     );
+    //   } else {
+    //     return <h1>No context</h1>;
+    //   }
+    // };
+    // return <div>{page()}</div>;
+
+    return (
+      <ExpenseContext.Provider>
+      <Navigation />
+        <Routes expenses={expenses}/>
+        <Footer />
+      </ExpenseContext.Provider>
+    )
   }
 }
 

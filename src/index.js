@@ -2,9 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 // import { library } from '@fortawesome/fontawesome-svg-core'
 import { BrowserRouter } from "react-router-dom";
-import Navigation from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/footer"
-import Routes from "./routes/Routes";
 import App from "./App";
 import "./index.css";
 // import {
@@ -15,10 +12,9 @@ import "./index.css";
 
 ReactDOM.render(
   <BrowserRouter>
-      <Navigation />
+      {/* <Navigation /> */}
       <App />
-      <Routes />
-      <Footer/>
+      {/* <Footer/> */}
   </BrowserRouter>,
   document.getElementById("root")
 );

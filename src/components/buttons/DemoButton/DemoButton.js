@@ -6,7 +6,7 @@ export default class DemoButton extends React.Component {
     render() {
         return (
         <div className="button-demo">
-            <Link to="/Dashboard"><button  
+            <Link to="/dashboard"><button  
             className="myButton"
             >Demo</button>
             </Link>

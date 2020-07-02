@@ -1,4 +1,4 @@
-# Full-Stack-Capstone
+<!-- # Full-Stack-Capstone
 While enrolled in Thinkful's Web Development bootcamp I created this Capstone project using React, Node.js, HTML, CSS, Vercel(Zeit), heroku, VS Code
 
 # Thinkful Full Stack Capstone - Easy Budget App
@@ -118,4 +118,4 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 <br/>
 [ ] Incorporate an additional API that will let the user know which streaming service currently offers their movie selection for viewing. -->
 
-
+ -->

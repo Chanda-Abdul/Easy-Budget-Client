@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import HomePage from "../components/HomePage/HomePage";
-import BudgetPage from "../components/BudgetPage/BudgetPage";
-import DashboardPage from "../components/DashboardPage/DashboardPage";
-import CreateExpensePage from "../components/CreateExpensePage/create-expense";
-import LearningPage from "../components/pages/LearningPage/learning-page";
+import HomePage from "../components/pages/HomePage/HomePage";
+import BudgetPage from "../components/pages/BudgetPage/BudgetPage";
+import DashboardPage from "../components/pages/DashboardPage/DashboardPage";
+import CreateExpensePage from "../components/pages/CreateExpensePage/CreateExpensePage";
+import LearningPage from "../components/pages/LearningPage/LearningPage";
 import NotFoundPage from "../components/pages/NotFound/NotFound"
 
 
@@ -18,7 +18,7 @@ export default class Routes extends Component {
           <Route exact path="/dashboard" component={DashboardPage} />
           <Route exact path="/create" component={CreateExpensePage} />
           <Route exact path="/learn" component={LearningPage} />
-          <Route component={NotFoundPage} />
+          <Route exact path="#" component={NotFoundPage} />
         </BrowserRouter>
       
     );

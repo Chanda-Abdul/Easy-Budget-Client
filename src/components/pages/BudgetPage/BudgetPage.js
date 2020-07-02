@@ -1,13 +1,14 @@
 import React from "react";
-import LearnMoreButton from "../LearnMoreButton/learn-more-button";
-import UpdateBudgetButton from "../UpdateBudgetButton/update-budget-button";
-import BudgetTable from "../BudgetTable/BudgetTable";
-import ExpenseContext from "../../contexts/ExpenseContext";
+import LearnMoreButton from "../../buttons/LearnMoreButton/LearnMoreButton";
+import UpdateBudgetButton from "../../buttons/UpdateBudgetButton/UpdateBudgetButton";
+import BudgetTable from "../../BudgetTable/BudgetTable";
+import ExpenseContext from "../../../contexts/ExpenseContext";
 
-export default function BudgetPage(props) {
+export default class BudgetPage extends React.Component {
   //function for consumer
-
+  render() {
   return (
+    
     <ExpenseContext.Consumer>
       {(value) => (
         <div className="budget-page">
@@ -19,9 +20,10 @@ export default function BudgetPage(props) {
             </section>
           </header>
           <section>
-            <BudgetTable
+            {/* <BudgetTable
             payload={value ? props : value}
-            />
+            /> */}
+            <BudgetTable />
           </section>
           <section>
             <form className="" onSubmit={(e) => this.handleSubmit(e)}>
@@ -51,4 +53,5 @@ export default function BudgetPage(props) {
       )}
     </ExpenseContext.Consumer>
   );
+          }
 }
