@@ -29,7 +29,7 @@ export default class BudgetTable extends React.Component {
 
 
   render() {
-    const expenses =  this.context;
+    const expenses = this.context || [];
     console.log(this.context, "budgettable");
     console.log("value");
 
@@ -37,8 +37,8 @@ export default class BudgetTable extends React.Component {
       <ExpenseContext.Consumer>
         {(value) => (
           <div>
-            budget table
             {console.log(expenses, "insidetable")}
+
             <table>
   <thead>
    <tr>
@@ -52,8 +52,10 @@ export default class BudgetTable extends React.Component {
      </tr>
      </thead>
      <tbody>
+  
+
        {/* Row 2 */}
-       {/* {expenses.map(expense => {
+       {expenses.map(expense => {
       return (
         <tr>
           <td>{ moment(expense.date).format('MMMM D, YYYY') }</td>
@@ -65,7 +67,7 @@ export default class BudgetTable extends React.Component {
         </tr>
       )
       })
-  } */}
+  }
             </tbody>
           {/* Table footer */}
           <tfoot>

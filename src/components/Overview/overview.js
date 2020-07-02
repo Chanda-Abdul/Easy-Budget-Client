@@ -7,11 +7,14 @@ export default function Overview(props) {
         <div className="overview-section">
         
                 <h1>An entirely better way to budget</h1>
+
                 
-                <p>
+                <h4>
+                    Easy budget helps you make progress towards your financial goals, one dollar at a time
+                    <br/>
                 <img src={invest} alt="investor" className="image" height="250em" width=""/>
-                <section><GoToBudgetButton /></section>
-                </p>
+                
+                </h4>
         </div>
     );
 }

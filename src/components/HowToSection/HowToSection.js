@@ -1,28 +1,17 @@
 import React from "react";
-import goals from "../../images/goals.png"
+import goals from "../../images/goals.png";
 
-
-export default class HowTo extends React.Component{
+export default class HowTo extends React.Component {
   render() {
     return (
-    <div>
-      <h2>How it works</h2>
-      <img
-        src={goals}
-        alt="#"
-        className="right"
-        height="250em"
-  
-      />
-      <h5>Intuitive Design</h5>
-      <br />
-      <h6>Easy Budget Record</h6>
-      <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum
-      nunc aliquet bibendum enim facilisis gravida neque. Enim blandit volutpat
-      maecenas volutpat blandit aliquam etiam erat velit. Facilisi cras
-      fermentum odio eu. Et malesuada fames ac turpis egestas.
-    </div>
-  )
-}
+      <div className="info textbox">
+        <h2>How it works</h2>
+        
+        <img src={goals} alt="#" className="right" height="250em" />
+        <h3>Track your expenses</h3>
+        <br /> The first step to gain control over your finaces is to see
+        exactly where your money is going. Easy Budget makes it easy to record all your expenses, so that you can see exactly where your money is going
+      </div>
+    );
+  }
 }

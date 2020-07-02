@@ -13,16 +13,11 @@ export default class HomePage extends React.Component {
       <section id="hero">
       <div className="header">
         <h1>Make budgeting easy</h1>
+          <p>Easy Budget helps you acheive financial freedom. 
+            <br /> By tracking and recording expenses we make it 
+            <br />easier to reach your long-term financial goals.</p>
+            <GoToBudgetButton />
         </div> 
-      </section>
-      <section className="medium-mode">
-        {" "}
-        <p>
-          <h2>Acheive Financial Freedom</h2>
-          <h3>Stuff</h3>
-          <h4>more stuff</h4>
-        </p>
-        
       </section>
 
       <section className="light-mode">
@@ -34,7 +29,7 @@ export default class HomePage extends React.Component {
       
       <section className="medium-mode">
         <ProgressSection />
-        <GoToBudgetButton />
+        
       </section>
       <section id="hero-footer"></section>
     </div>
