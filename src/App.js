@@ -14,17 +14,20 @@ export default class App extends React.Component {
   state = {
     expenses: null
   }
-
+// renderExpenses = () => {
   async componentDidMount() {
     const expenses = await this.expenseService.getAllExpenses()
     this.setState({
       expenses,
     });
+    // console.log(this.setState)
   }
+// }
+  
 
   render() {
-    const { expenses } = this.state;
-    console.log(expenses, "app expenses")
+    // const { expenses } = this.state;
+    // console.log(expenses, "app expenses")
    
     // const page = () => {
     //   if (expenses && expenses.length > 0) {
@@ -46,7 +49,9 @@ export default class App extends React.Component {
     // return <div>{page()}</div>;
 
     return (
-      <ExpenseContext.Provider>
+      <ExpenseContext.Provider 
+      value={this.state.expenses}
+      >
       <Navigation />
         <Routes/>
         {/* <BudgetPage expenses={expenses}/> */}
