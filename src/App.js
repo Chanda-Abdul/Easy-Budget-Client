@@ -4,6 +4,7 @@ import Routes from './routes/Routes'
 import Navigation from "./components/NavBar/NavBar"
 import Footer from './components/Footer/Footer'
 import ExpenseService from "./api/fast-garden"
+// import BudgetPage from './components/pages/BudgetPage/BudgetPage'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -23,6 +24,7 @@ export default class App extends React.Component {
 
   render() {
     const { expenses } = this.state;
+    console.log(expenses, "app expenses")
    
     // const page = () => {
     //   if (expenses && expenses.length > 0) {
@@ -46,7 +48,8 @@ export default class App extends React.Component {
     return (
       <ExpenseContext.Provider>
       <Navigation />
-        <Routes expenses={expenses}/>
+        <Routes/>
+        {/* <BudgetPage expenses={expenses}/> */}
         <Footer />
       </ExpenseContext.Provider>
     )

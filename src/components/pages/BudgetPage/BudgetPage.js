@@ -5,13 +5,15 @@ import BudgetTable from "../../BudgetTable/BudgetTable";
 import ExpenseContext from "../../../contexts/ExpenseContext";
 
 export default class BudgetPage extends React.Component {
-  //function for consumer
   render() {
   return (
     
     <ExpenseContext.Consumer>
+      
       {(value) => (
+        
         <div className="budget-page">
+          
           <section id="hero" />
           <header className="banner">
             <h1>Your Budget</h1>

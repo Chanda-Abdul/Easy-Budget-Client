@@ -12,9 +12,7 @@ import "./index.css";
 
 ReactDOM.render(
   <BrowserRouter>
-      {/* <Navigation /> */}
       <App />
-      {/* <Footer/> */}
   </BrowserRouter>,
   document.getElementById("root")
 );
