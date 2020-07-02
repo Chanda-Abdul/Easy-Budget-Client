@@ -1,10 +1,10 @@
 import React from "react";
 import LearnMoreButton from "../LearnMoreButton/learn-more-button";
 import UpdateBudgetButton from "../UpdateBudgetButton/update-budget-button";
-import BudgetTable from "../BudgetTable/budget-table";
+import BudgetTable from "../BudgetTable/BudgetTable";
 import ExpenseContext from "../../contexts/ExpenseContext";
 
-export default function BudgetPage() {
+export default function BudgetPage(props) {
   //function for consumer
 
   return (
@@ -20,8 +20,7 @@ export default function BudgetPage() {
           </header>
           <section>
             <BudgetTable
-              payload={value}
-              // expenses={budgetExpenses}
+            payload={value ? props : value}
             />
           </section>
           <section>
