@@ -15,6 +15,30 @@ class ExpenseService {
       });
   }
 
+
+  deleteExpense = (expenseId) => {
+    console.log("We will delete expense with id", expenseId);
+    fetch(`${config.API_ENDPOINT}/expenses/${expenseId}`, {
+      method: "DELETE",
+      headers: {
+        "content-type": "application/json",
+      },
+      mode: "cors",
+    })
+      .then((res) => {
+        if (!res.ok) {
+          return res.json().then((event) => Promise.reject(event));
+        }
+        return res;
+      })
+      .then((res) => {
+        this.getAllExpenses(res);
+      })
+      .catch((error) => {
+        console.error({ error });
+      });
+  };
+
   updateExpense = () => {
     
   };
@@ -43,28 +67,7 @@ class ExpenseService {
       });
   };
 
-  handleDeleteExpense = (expenseId) => {
-    console.log("We will delete expense with id", expenseId);
-    fetch(`${config.API_ENDPOINT}/expenses/${expenseId}`, {
-      method: "DELETE",
-      headers: {
-        "content-type": "application/json",
-      },
-      mode: "cors",
-    })
-      .then((res) => {
-        if (!res.ok) {
-          return res.json().then((event) => Promise.reject(event));
-        }
-        return res;
-      })
-      .then((res) => {
-        this.getAllExpenses(res);
-      })
-      .catch((error) => {
-        console.error({ error });
-      });
-  };
+  
 
   handleUpdateExpense = (expenseToUpdate) => {
     fetch(`${config.API_ENDPOINT}/expenses/${expenseToUpdate.id}`, {

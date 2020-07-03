@@ -1,18 +1,25 @@
 .header {
-    background-color: #8dc53f;
-    padding: 0.5em;
+  background-color: #8dc53f;
+  padding: 0.5em;
 }
 
-img {
-    margin: 40px;
+.right {
+  float: right;
+  display: inline-block;
+}
+
+.left {
+  float: left;
+  display: inline-block;
+  margin: 20px;
 }
 
 p {
-    font-size: 0.75em;
+  font-size: 0.75em;
 }
 
-.textbox {
-    height: 400px;
-    
-     
-  }
+.container {
+  display: inline-flex;
+  vertical-align: center;
+  padding: 20px;
+}

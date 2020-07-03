@@ -1,12 +1,15 @@
-import React from 'react';
-import './footer.css'
+import React from "react";
+import "./footer.css";
+import moment from "moment";
 
-
-export default function Footer(props) {
-  //update so that year is dynamic
+export default class Footer extends React.Component {
+  render() {
+    const date = moment().toDate();
     return (
-        <footer className="content-info">
-        Copyright © 2020 By Chanda Hubbard. All rights reserved.
+      <footer className="content-info">
+        Copyright © {moment(date).format("YYYY")} By Chanda Hubbard. All rights
+        reserved.
       </footer>
     );
+  }
 }

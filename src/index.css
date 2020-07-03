@@ -72,7 +72,6 @@ section {
 	padding: 550px 0;
   color: white;
   font-size: 2rem;
-
 }
 
 #hero-footer {
@@ -81,6 +80,16 @@ section {
   background-size: cover;
 	padding: 225px 0;
   color: white;
+}
+.banner-top {
+  background-image:
+  url("./images/moneybackground.png");
+  height:250px;
+}
+.banner-bottom {
+  background-image:
+  url("./images/moneybackground.png");
+  height:200px;
 }
 
 .dark-mode {

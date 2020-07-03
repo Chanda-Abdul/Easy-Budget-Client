@@ -3,6 +3,7 @@ import React from "react";
 export default function LearningPage(props) {
   return (
     <div>
+      <div className="banner-top"></div>
       <section>
         <h1>What's Next?</h1>
       </section>
@@ -31,6 +32,7 @@ export default function LearningPage(props) {
       </section>
       <section>
       </section>
+      <div className="banner-bottom"></div>
     </div>
   );
 }

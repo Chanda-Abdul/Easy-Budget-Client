@@ -5,20 +5,22 @@ export default class ProgressSection extends React.Component {
   render() 
   {
     return (
-    <div>
-      <h3>Visible Progress</h3>
-      <h5>Easy Budget Dashboard</h5>
+      <div>
+        <h1>Visible Progress</h1>
+         <div className="info container">
       <br /> <img
         src={progress}
         alt="#"
         className="left"
         height="250em"/> 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum
-      nunc aliquet bibendum enim facilisis gravida neque. Enim blandit volutpat
-      maecenas volutpat blandit aliquam etiam erat velit. Facilisi cras
-      fermentum odio eu. Et malesuada fames ac turpis egestas.
+       <h4>Monitor your progress. 
+         Stay on track and monitor your expenses with 
+         customized charts created directly from your own expenses. 
+         Once you can see where you money is going you can decide where to cut back 
+         in order toso that you can acheive your financial goals</h4> 
     </div>
+      </div>
+   
   )
 }
 }

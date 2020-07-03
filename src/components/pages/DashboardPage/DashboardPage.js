@@ -1,6 +1,6 @@
 import React from "react";
 import Visuals from "../../Visuals/Visuals";
-import Stats from "../../Stats/stats";
+import Stats from "../../Stats/Stats";
 import UpdateBudgetButton from "../../buttons/UpdateBudgetButton/UpdateBudgetButton";
 import LearnMoreButton from "../../buttons/LearnMoreButton/LearnMoreButton";
 
