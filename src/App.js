@@ -3,7 +3,7 @@ import ExpenseContext from "./contexts/ExpenseContext";
 import Routes from './routes/Routes'
 import Navigation from "./components/NavBar/NavBar"
 import Footer from './components/Footer/Footer'
-import ExpenseService from "./api/fast-garden"
+import ExpenseService from "./services/ExpenseService"
 
 export default class App extends React.Component {
   constructor(props) {
@@ -15,24 +15,20 @@ export default class App extends React.Component {
   }
 
   async componentDidMount() {
+
     const expenses = await this.expenseService.getAllExpenses()
     this.setState({
       expenses,
-    });
-   
+    });  
   }
 
-  
-
   render() {
-
     return (
       <ExpenseContext.Provider 
-      value={this.state.expenses}
+      value={{ expenses : this.state.expenses }}
       >
       <Navigation />
         <Routes/>
-        
         <Footer />
       </ExpenseContext.Provider>
     )

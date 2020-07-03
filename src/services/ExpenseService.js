@@ -1,51 +1,44 @@
-import config from "../config"
+import config from "../config";
 
 class ExpenseService {
   getAllExpenses() {
-    // this works
+    // this is to retrieve all expenses from database
     console.log(config.API_ENDPOINT, "endpoint");
     return fetch(`${config.API_ENDPOINT}/expenses`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data, "data");
-        return data.expenses
+        return data.expenses;
       })
       .catch((error) => {
         console.log(error, "error");
       });
   }
 
-
   deleteExpense = (expenseId) => {
+    //this is to delete expenses from database, in <budgetTable/>
     console.log("We will delete expense with id", expenseId);
-    fetch(`${config.API_ENDPOINT}/expenses/${expenseId}`, {
+    return fetch(`${config.API_ENDPOINT}/expenses/${expenseId}`, {
       method: "DELETE",
       headers: {
-        "content-type": "application/json",
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Headers":
+          "Content-Type,Content-Length,Server,Date,access-control-allow-methods,access-control-allow-origin",
       },
-      mode: "cors",
     })
       .then((res) => {
-        if (!res.ok) {
-          return res.json().then((event) => Promise.reject(event));
-        }
+        console.log(res, "response");
         return res;
       })
-      .then((res) => {
-        this.getAllExpenses(res);
+      .then((data) => {
+        console.log(data, "data from delete");
       })
       .catch((error) => {
         console.error({ error });
       });
   };
 
-  updateExpense = () => {
-    
-  };
-
-  showExpense = () => {
-    
-  };
+  updateExpense = () => {};
 
   handleAddExpense = (data) => {
     fetch(`${config.API_ENDPOINT}/expense`, {
@@ -66,8 +59,6 @@ class ExpenseService {
         console.error({ error });
       });
   };
-
-  
 
   handleUpdateExpense = (expenseToUpdate) => {
     fetch(`${config.API_ENDPOINT}/expenses/${expenseToUpdate.id}`, {
@@ -92,4 +83,4 @@ class ExpenseService {
   };
 }
 
-export default ExpenseService
+export default ExpenseService;

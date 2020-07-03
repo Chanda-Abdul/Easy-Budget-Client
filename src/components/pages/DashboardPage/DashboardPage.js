@@ -8,9 +8,9 @@ export default class DashBoardPage extends React.Component {
   render() {
     return (
       <div>
-        <section>
+       <div className="banner-top"/>
           <h1>The Dashboard</h1>
-        </section>
+  
         <section>
           <Stats />
         </section>
@@ -21,7 +21,7 @@ export default class DashBoardPage extends React.Component {
           <UpdateBudgetButton />
           <LearnMoreButton />
         </section>
-        <section></section>
+        <div className="banner-bottom"/>
       </div>
     );
   }
