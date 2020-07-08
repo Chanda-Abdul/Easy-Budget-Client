@@ -4,11 +4,13 @@ export default class CreateExpensePage extends React.Component {
   state = {
     expenseName: "",
     amount: "",
-    category: "",
+    category: "recurring",
   };
 
   onInputChange = (e) => {
     e.preventDefault();
+
+    alert(e.target.value)
 
     this.setState({
       [e.target.name]: e.target.value,
@@ -22,6 +24,10 @@ export default class CreateExpensePage extends React.Component {
       ${this.state.category}`
     );
   };
+
+  handleSubmit = () => {
+
+  }
 
   render() {
     return (
@@ -52,7 +58,7 @@ export default class CreateExpensePage extends React.Component {
                 <input
                   placeholder="$20"
                   name="amount"
-                  type="currency"
+                  type="number"
                   className="input__control"
                   value={this.state.amount}
                   onChange={this.onInputChange}
@@ -60,8 +66,11 @@ export default class CreateExpensePage extends React.Component {
                 <label htmlFor="expense-category">Category: </label>
                 <select
                   // id="expense-category"
+                  value={this.state.category}
+                  defaultValue={this.state.category}
                   name="category"
                   onChange={this.onInputChange}
+                  required
                 >
                   <option value="recurring">Recurring</option>
                   <option value="savings">Savings</option>
@@ -72,7 +81,6 @@ export default class CreateExpensePage extends React.Component {
               <button
                 className="myButton"
                 type="submit"
-                onClick={this.submitLogin}
               >
                 Add Expense
               </button>
