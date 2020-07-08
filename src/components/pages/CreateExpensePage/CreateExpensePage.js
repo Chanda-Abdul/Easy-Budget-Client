@@ -1,24 +1,27 @@
 import React from "react";
 
-
 export default class CreateExpensePage extends React.Component {
-  state = { 
+  state = {
     expenseName: "",
     amount: "",
-    category: ""
-   };
+    category: "",
+  };
 
-   onInputChange = e => {
-     e.preventDefault();
+  onInputChange = (e) => {
+    e.preventDefault();
 
-     this.setState({
-       [e.target.name]: e.target.value
-     });
-   };
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
 
-submitLogin = () => {
-  alert(`Expense name: ${this.state.expenseName} in the amount of ${this.state.amount} to be categorized as ${this.state.category}`)
-}
+  submitLogin = () => {
+    alert(
+      `Adding an expense named ${this.state.expenseName} in the amount of $
+      ${this.state.amount} to be categorized as 
+      ${this.state.category}`
+    );
+  };
 
   render() {
     return (
@@ -36,8 +39,7 @@ submitLogin = () => {
               </h3>
               <div className="input-form-group">
                 <label htmlFor="expenseName"> </label>
-                
-                New Expense Name: 
+                New Expense Name:
                 <input
                   placeholder="Another expense"
                   name="expenseName"
@@ -46,7 +48,7 @@ submitLogin = () => {
                   className="input__control"
                   onChange={this.onInputChange}
                 />
-                Amount: 
+                Amount:
                 <input
                   placeholder="$20"
                   name="amount"
@@ -56,14 +58,24 @@ submitLogin = () => {
                   onChange={this.onInputChange}
                 />
                 <label htmlFor="expense-category">Category: </label>
-                <select id="expense-category" name="expense_category" onChange={this.onInputChange}>
+                <select
+                  // id="expense-category"
+                  name="category"
+                  onChange={this.onInputChange}
+                >
                   <option value="recurring">Recurring</option>
                   <option value="savings">Savings</option>
                   <option value="discretionary">Discretionary</option>
                 </select>
               </div>
 
-              <button className="myButton" type="submit" onClick={this.submitLogin}>Add Expense</button>
+              <button
+                className="myButton"
+                type="submit"
+                onClick={this.submitLogin}
+              >
+                Add Expense
+              </button>
             </fieldset>
           </form>
         </section>
