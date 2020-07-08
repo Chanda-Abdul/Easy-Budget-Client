@@ -1,6 +1,5 @@
 import React from "react";
 import invest from "../../images/invest.png";
-// import GoToBudgetButton from "../buttons/GoToBudgetButton/GoToBudgetButton";
 
 export default function Overview(props) {
   return (

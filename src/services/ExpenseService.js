@@ -51,7 +51,7 @@ handleAddExpense = (data) => {
         return res.json();
       })
       .then((res) => {
-        this.getAllExpenses(res);
+         return this.getAllExpenses(res);
       })
       .catch((error) => {
         console.error({ error });

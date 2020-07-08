@@ -1,4 +1,5 @@
 import React from "react";
+import ExpenseService from "../../../services/ExpenseService";
 
 export default class CreateExpensePage extends React.Component {
   state = {
@@ -7,27 +8,40 @@ export default class CreateExpensePage extends React.Component {
     category: "recurring",
   };
 
+  constructor(props) {
+    super(props);
+    this.expenseService = new ExpenseService();
+  }
+
   onInputChange = (e) => {
     e.preventDefault();
 
-    alert(e.target.value)
+    // alert(e.target.value);
 
     this.setState({
       [e.target.name]: e.target.value,
     });
   };
 
-  submitLogin = () => {
-    alert(
-      `Adding an expense named ${this.state.expenseName} in the amount of $
-      ${this.state.amount} to be categorized as 
-      ${this.state.category}`
-    );
+  handleSubmit = (event, expenseId) => {
+    event.preventDefault();
+    const newExpenses = {
+      expenseName: this.state.expenseName,
+      amount: this.state.amount,
+      category: this.state.expenses,
+    };
+    this.expenseService
+      .handleAddExpense()
+      .then(() => {
+        const createdExpenses = newExpenses.filter(
+          (expense) => expense.id !== expenseId
+        );
+        this.setState({ expenses: createdExpenses });
+      })
+      .catch((err) => {
+        console.log(err, "error on createExpense");
+      });
   };
-
-  handleSubmit = () => {
-
-  }
 
   render() {
     return (
@@ -78,10 +92,7 @@ export default class CreateExpensePage extends React.Component {
                 </select>
               </div>
 
-              <button
-                className="myButton"
-                type="submit"
-              >
+              <button className="myButton" type="submit">
                 Add Expense
               </button>
             </fieldset>
