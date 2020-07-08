@@ -8,7 +8,7 @@ export default class CreateExpensePage extends React.Component {
     category: ""
    };
 
-   onChangeInput = e => {
+   onInputChange = e => {
      e.preventDefault();
 
      this.setState({
@@ -44,7 +44,7 @@ submitLogin = () => {
                   type="text"
                   value={this.state.expenseName}
                   className="input__control"
-                  onChange={this.onChangeInput}
+                  onChange={this.onInputChange}
                 />
                 Amount: 
                 <input
@@ -53,10 +53,10 @@ submitLogin = () => {
                   type="currency"
                   className="input__control"
                   value={this.state.amount}
-                  onChange={this.onChangeInput}
+                  onChange={this.onInputChange}
                 />
                 <label htmlFor="expense-category">Category: </label>
-                <select id="expense-category">
+                <select id="expense-category" name="expense_category" onChange={this.onInputChange}>
                   <option value="recurring">Recurring</option>
                   <option value="savings">Savings</option>
                   <option value="discretionary">Discretionary</option>
