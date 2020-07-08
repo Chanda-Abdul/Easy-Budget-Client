@@ -1,6 +1,25 @@
 import React from "react";
 
+
 export default class CreateExpensePage extends React.Component {
+  state = { 
+    expenseName: "",
+    amount: "",
+    category: ""
+   };
+
+   onChangeInput = e => {
+     e.preventDefault();
+
+     this.setState({
+       [e.target.name]: e.target.value
+     });
+   };
+
+submitLogin = () => {
+  alert(`Expense name: ${this.state.expenseName} in the amount of ${this.state.amount} to be categorized as ${this.state.category}`)
+}
+
   render() {
     return (
       <div>
@@ -16,25 +35,25 @@ export default class CreateExpensePage extends React.Component {
                 expense to add it to your budget
               </h3>
               <div className="input-form-group">
-                <label htmlFor="name"> </label>
+                <label htmlFor="expenseName"> </label>
                 
-                Name: 
+                New Expense Name: 
                 <input
-                  type="text"
-                  className="input__control"
-                  name="total-income"
-                  id="total-income"
                   placeholder="Another expense"
-                  onChange={(e) => this.updateIncome(e.target.value)}
+                  name="expenseName"
+                  type="text"
+                  value={this.state.expenseName}
+                  className="input__control"
+                  onChange={this.onChangeInput}
                 />
-                Amount:{" "}
+                Amount: 
                 <input
+                  placeholder="$20"
+                  name="amount"
                   type="currency"
                   className="input__control"
-                  name="total-income"
-                  id="total-income"
-                  placeholder="$4000"
-                  onChange={(e) => this.updateIncome(e.target.value)}
+                  value={this.state.amount}
+                  onChange={this.onChangeInput}
                 />
                 <label htmlFor="expense-category">Category: </label>
                 <select id="expense-category">
@@ -44,7 +63,7 @@ export default class CreateExpensePage extends React.Component {
                 </select>
               </div>
 
-              <button className="myButton">Add Expense</button>
+              <button className="myButton" type="submit" onClick={this.submitLogin}>Add Expense</button>
             </fieldset>
           </form>
         </section>

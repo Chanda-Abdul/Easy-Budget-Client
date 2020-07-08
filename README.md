@@ -1,4 +1,4 @@
-<!-- # Full-Stack-Capstone
+# Full-Stack-Capstone
 While enrolled in Thinkful's Web Development bootcamp I created this Capstone project using React, Node.js, HTML, CSS, Vercel(Zeit), heroku, VS Code
 
 # Thinkful Full Stack Capstone - Easy Budget App
@@ -14,7 +14,7 @@ Chanda Hubbard
 [Link to API](https://github.com/ChandaHubbard/easy-budget-app-api)
 
 
-
+<!-- 
 ## Motivation
 <!-- 
 Sometimes you just want a nice relaxing night in, while ordering dinner and watching a good movie.  There are so many restaurants and movies to choose from, and it can be very hard to make a selection.  This app was created to help users avoid the decision paralysis that happens when they need to deicde on a resturaunt to eat at, or when they need to decide on a movie to watch. First, the user will input their location and the app will show the information for a takeout restaurant nearby.  Then the user will input a movie that they like and the app will show them a recommendation and trailer for a similar movie. -->
