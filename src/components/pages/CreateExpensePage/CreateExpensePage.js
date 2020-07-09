@@ -30,16 +30,13 @@ export default class CreateExpensePage extends React.Component {
       amount: this.state.amount,
       category: this.state.expenses,
     };
-    this.expenseService
-      .handleAddExpense()
-      .then(() => {
-        const createdExpenses = newExpenses.filter(
-          (expense) => expense.id !== expenseId
-        );
-        this.setState({ expenses: createdExpenses });
+    this.ExpenseService
+    .handleAddExpense()
+    .then((expenses) => {
+        this.context.setExpenses(expenses)
       })
       .catch((err) => {
-        console.log(err, "error on createExpense");
+        console.log(err, 'error on createExpense');
       });
   };
 

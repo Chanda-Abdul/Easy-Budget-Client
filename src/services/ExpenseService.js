@@ -39,7 +39,7 @@ class ExpenseService {
   };
 
 handleAddExpense = (data) => {
-    fetch(`${config.API_ENDPOINT}/expense`, {
+    return fetch(`${config.API_ENDPOINT}/expense`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
