@@ -6,6 +6,8 @@ import Footer from "./components/Footer/Footer";
 import ExpenseService from "./services/ExpenseService";
 
 export default class App extends React.Component {
+  static contextType = ExpenseContext
+  
   constructor(props) {
     super(props);
     this.expenseService = new ExpenseService();

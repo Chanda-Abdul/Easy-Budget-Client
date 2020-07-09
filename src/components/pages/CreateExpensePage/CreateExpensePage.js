@@ -1,11 +1,14 @@
 import React from "react";
 import ExpenseService from "../../../services/ExpenseService";
+import ExpenseContext from "../../../contexts/ExpenseContext"
 
 export default class CreateExpensePage extends React.Component {
+  static contextType = ExpenseContext
+  
   state = {
     expenseName: "",
     amount: "",
-    type: "Other",
+    type: 16,
     category: "recurring",
   };
 
@@ -16,9 +19,6 @@ export default class CreateExpensePage extends React.Component {
 
   onInputChange = (e) => {
     e.preventDefault();
-
-    // alert(e.target.value);
-
     this.setState({
       [e.target.name]: e.target.value,
     });
@@ -27,9 +27,9 @@ export default class CreateExpensePage extends React.Component {
   handleSubmit = (event, expenseId) => {
     event.preventDefault();
     const newExpenses = {
-      expenseName: this.state.expenseName,
+      name: this.state.expenseName,
       amount: this.state.amount,
-      type: this.state.type,
+      type_id: this.state.type,
       category: this.state.expenses,
     };
     this.expenseService
@@ -84,6 +84,7 @@ export default class CreateExpensePage extends React.Component {
                   onChange={this.onInputChange}
                   required
                 ><br />
+                  <option value="16">Other</option>
                   <option value="1">Rent</option>
                   <option value="2">Electricity</option>
                   <option value="3">Gas</option>
@@ -99,7 +100,6 @@ export default class CreateExpensePage extends React.Component {
                   <option value="13">Travel</option>
                   <option value="14">Shopping</option>
                   <option value="15">Home</option>
-                  <option value="16">Other</option>
                   <option value="17">Charity</option>
                   <option value="18">Beauty</option>
                   <option value="19">Entertainment</option>
