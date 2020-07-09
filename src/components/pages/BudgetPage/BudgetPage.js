@@ -8,8 +8,7 @@ export default class BudgetPage extends React.Component {
   static contextType = ExpenseContext;
 
   render() {
-    const expenses = this.context;
-    console.log(expenses, "context");
+    // const expenses = this.context;
     return (
       <ExpenseContext.Consumer>
         {(value) => (

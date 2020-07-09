@@ -3,11 +3,9 @@ import config from "../config";
 class ExpenseService {
   getAllExpenses() {
     // this is to retrieve all expenses from database
-    console.log(config.API_ENDPOINT, "endpoint");
     return fetch(`${config.API_ENDPOINT}/expenses`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data, "data");
         return data.expenses;
       })
       .catch((error) => {
@@ -39,7 +37,7 @@ class ExpenseService {
   };
 
 handleAddExpense = (data) => {
-    return fetch(`${config.API_ENDPOINT}/expense`, {
+   return fetch(`${config.API_ENDPOINT}/expenses`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

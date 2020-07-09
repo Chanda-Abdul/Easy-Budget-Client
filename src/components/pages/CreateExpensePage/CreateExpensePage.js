@@ -5,6 +5,7 @@ export default class CreateExpensePage extends React.Component {
   state = {
     expenseName: "",
     amount: "",
+    type: "Other",
     category: "recurring",
   };
 
@@ -28,15 +29,16 @@ export default class CreateExpensePage extends React.Component {
     const newExpenses = {
       expenseName: this.state.expenseName,
       amount: this.state.amount,
+      type: this.state.type,
       category: this.state.expenses,
     };
-    this.ExpenseService
-    .handleAddExpense()
-    .then((expenses) => {
-        this.context.setExpenses(expenses)
+    this.expenseService
+      .handleAddExpense(newExpenses)
+      .then((expenses) => {
+        this.context.setExpenses(expenses);
       })
       .catch((err) => {
-        console.log(err, 'error on createExpense');
+        console.log(err, "error on createExpense");
       });
   };
 
@@ -64,7 +66,7 @@ export default class CreateExpensePage extends React.Component {
                   value={this.state.expenseName}
                   className="input__control"
                   onChange={this.onInputChange}
-                />
+                /><br />
                 Amount:
                 <input
                   placeholder="$20"
@@ -73,10 +75,40 @@ export default class CreateExpensePage extends React.Component {
                   className="input__control"
                   value={this.state.amount}
                   onChange={this.onInputChange}
-                />
-                <label htmlFor="expense-category">Category: </label>
+                /> <br />
+                <label htmlFor="expense-type"> Type: </label>
                 <select
-                  // id="expense-category"
+                  value={this.state.type}
+                  defaultValue={this.state.type}
+                  name="type"
+                  onChange={this.onInputChange}
+                  required
+                ><br />
+                  <option value="1">Rent</option>
+                  <option value="2">Electricity</option>
+                  <option value="3">Gas</option>
+                  <option value="4">Phone</option>
+                  <option value="5">Internet</option>
+                  <option value="6">Water</option>
+                  <option value="7">Savings</option>
+                  <option value="8">Investments</option>
+                  <option value="9">Mortgage</option>
+                  <option value="10">Transportation</option>
+                  <option value="11">Restauraunts</option>
+                  <option value="12">Groceries</option>
+                  <option value="13">Travel</option>
+                  <option value="14">Shopping</option>
+                  <option value="15">Home</option>
+                  <option value="16">Other</option>
+                  <option value="17">Charity</option>
+                  <option value="18">Beauty</option>
+                  <option value="19">Entertainment</option>
+                  <option value="20">Gifts</option>
+                  <option value="21">Insurance</option>
+                  <option value="22">Debt Repayment</option>
+                </select><br />
+                <label htmlFor="expense-category"> Category: </label>
+                <select
                   value={this.state.category}
                   defaultValue={this.state.category}
                   name="category"
