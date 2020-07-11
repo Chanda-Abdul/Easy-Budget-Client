@@ -1,19 +1,33 @@
-# Full-Stack-Capstone
-While enrolled in Thinkful's Web Development bootcamp I created this Capstone project using React, Node.js, HTML, CSS, Vercel(Zeit), heroku, VS Code
-
 # Thinkful Full Stack Capstone - Easy Budget App
-
-
 
 ## Programmer
 Chanda Hubbard
+
+# Full-Stack-Capstone
+While enrolled in Thinkful's Web Development bootcamp I created this Capstone project 
+
 
 [>Live URL<](https://easy-budget.chandacodes.vercel.app)
 
 
 [Link to API](https://github.com/ChandaHubbard/easy-budget-app-api)
 
+# Technology Used
+React, Node.js, HTML, CSS, Vercel(Zeit), Heroku, VS Code
 
+
+
+
+
+
+
+
+<!-- 
+
+Documentation of your API.
+Screenshot(s) of your app. This makes your app description much easier to understand.
+A summary section. This should have a concise explanation of what your app does. Try to frame this from the standpoint of what the user does, or what the app enables for the user.
+A section on the technology used. -->
 <!-- 
 ## Motivation
 <!-- 

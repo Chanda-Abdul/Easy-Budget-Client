@@ -1,12 +1,12 @@
 table, td {
-    border: 1px solid #ADCE80;
+    border: .1rem solid #ADCE80;
 }
 /* Table */
 
 table {
     height: 40%;
     left: 10%;
-    margin: 20px auto;
+    margin: 1rem auto;
     overflow-y: scroll;
     position: static;
     width: 80%;
@@ -21,30 +21,24 @@ table {
     font-family: 'Amatic SC', cursive;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: .25rem;
     text-transform: uppercase;
-    
   }
   
   tr {
     background: white;
-    border-bottom: 5px solid #ADCE80;
-    margin-bottom: 5px;
-    
+    border-bottom: .25rem solid #ADCE80;
+    margin-bottom: .25rem;
   }
   
   th, td {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    padding: 20px;
+    padding: 1rem;
     text-align: left;
     width: 33.3333%;
     color: black !important;
     text-align: right;
   }
 
-  /* .right {
-    text-align: right;
-    border: none;
-  }
-   */
+ 
