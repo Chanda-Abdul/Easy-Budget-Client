@@ -20,8 +20,6 @@ class ExpenseService {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Headers":
-          "Content-Type,Content-Length,Server,Date,access-control-allow-methods,access-control-allow-origin",
       },
     })
       .then((res) => {
@@ -63,8 +61,6 @@ handleAddExpense = (data) => {
   //     method: "PATCH",
   //     headers: {
   //       "Content-Type": "application/json",
-  //       "Access-Control-Allow-Headers":
-  //         "Content-Type,Content-Length,Server,Date,access-control-allow-methods,access-control-allow-origin",
   //     },
   //     body: JSON.stringify(),
   //   })

@@ -6,7 +6,7 @@ export default class SignUpButton extends React.Component {
   signup() {
     Swal.fire({
         titleText: 'Easy Budget Signup',
-        html: 'Thank you for your interest. <br> The app is currently in the testing phase.  <br>Sign up below and we will let you know once Easy Budget is available to the public',
+        html: 'Thank you for your interest. The app is currently in the testing phase.  Sign up below and we will let you know once Easy Budget is available to the public',
         icon: 'info',
         input: 'email',
         confirmButtonText: 'Sign Up!',

@@ -16,7 +16,7 @@ export default class Routes extends Component {
         <Route exact path="/dashboard" component={DashboardPage} />
         <Route exact path="/create" component={CreateExpensePage} />
         <Route exact path="/learn" component={LearningPage} />
-        <Route exact path="#" component={NotFoundPage} />
+        <Route exact path="/*" component={NotFoundPage} />
       </Switch>
     );
   }

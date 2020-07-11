@@ -1,15 +1,16 @@
 import React from "react";
 import ExpenseService from "../../../services/ExpenseService";
 import ExpenseContext from "../../../contexts/ExpenseContext"
+import GoToBudgetButton from '../../buttons/GoToBudgetButton/GoToBudgetButton'
 
 export default class CreateExpensePage extends React.Component {
   static contextType = ExpenseContext
-  
+
   state = {
     expenseName: "",
     amount: "",
     type: 16,
-    category: "recurring",
+    category: "Discretionary",
   };
 
   constructor(props) {
@@ -40,6 +41,7 @@ export default class CreateExpensePage extends React.Component {
       .catch((err) => {
         console.log(err, "error on createExpense");
       });
+      alert('Expense has been added!')
   };
 
   render() {
@@ -115,9 +117,9 @@ export default class CreateExpensePage extends React.Component {
                   onChange={this.onInputChange}
                   required
                 >
-                  <option value="recurring">Recurring</option>
-                  <option value="savings">Savings</option>
-                  <option value="discretionary">Discretionary</option>
+                  <option value="Recurring">Recurring</option>
+                  <option value="Savings">Savings</option>
+                  <option value="Discretionary">Discretionary</option>
                 </select>
               </div>
 
