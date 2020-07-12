@@ -26,11 +26,14 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 #### Landing Page
 
 <img src="screens/landing.png" alt="Image of Landing page" width="420px">
+<img src="screens/landing2.png" alt="Image of Landing page" width="420px">
+<img src="screens/landing3.png" alt="Image of Landing page" width="420px">
+<img src="screens/landing4.png" alt="Image of Landing page" width="420px">
 <img src="screens/signup.png" alt="Image of signup alert" width="420px">
 <img src="screens/expenses1.png" alt="Image of Expense Screen" width="420px">
 <img src="screens/expenses2.png" alt="Image of Expense Screen" width="420px">
 <img src="screens/addexpense.png" alt="Image of add xpense page" width="420px">
-<img src="screens/expense feedback.png" alt="Image of Expense feedback alert" width="420px">
+<img src="screens/expensefeedback.png" alt="Image of Expense feedback alert" width="420px">
 <img src="screens/notfound.png" alt="Image of 404 page" width="420px">
 
 ## Easy Budget API
