@@ -12,15 +12,23 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 # Technology Used
 ### Front-end
 - React
+    - Router
+    - Context
+    - Libraries
+        - Sweet Alerts
 - HTML
 - CSS
 - Vercel(Zeit)
-- Sweet Alerts
+
 
 ### Back-end
 - Node.js
+    - Middleware
+        - CORS
 - Express
+    - Knex
 - PostgreSQL
+    - Elephant SQL
 - Mocha, Chai & Supertest
 - Heroku
 
@@ -51,12 +59,15 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 - Click the <b>Delete</b> button to remove expenses.
 - Expenses can be added with the <b>Update Budget</b> button and then the app will navigate to the add and expense page.
 
+
+
+<img src="screens/expenses1.png" alt="Image of Expense Screen" width="420px">
+<img src="screens/expenses2.png" alt="Image of Expense Screen" width="420px">
+
 #### Create an expense screen
 
 - Once the <b>Update Budget</b> button is clicked the app navigates to the `/create` page
 
-<img src="screens/expenses1.png" alt="Image of Expense Screen" width="420px">
-<img src="screens/expenses2.png" alt="Image of Expense Screen" width="420px">
 <img src="screens/addexpense.png" alt="Image of add xpense page" width="420px">
 <img src="screens/expensefeedback.png" alt="Image of Expense feedback alert" width="420px">
 
