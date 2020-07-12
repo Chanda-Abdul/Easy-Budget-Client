@@ -71,7 +71,7 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 - Once the <b>Add Expense</b> button has been click an alert will appear to let you know that the expense has been created. 
 - This alert was created with <b>Sweet Alerts</b>
 
-<img src="screens/expensesFeedback.png" alt="Image of Expense feedback alert" width="420px">
+<img src="screens/expenseFeedback.png" alt="Image of Expense feedback alert" width="420px">
 
 #### Not Found screen
 
