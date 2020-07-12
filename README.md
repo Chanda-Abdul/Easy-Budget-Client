@@ -42,8 +42,6 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 
 ## Built with:
 
-<!-- #### <br/>APIs <br/>&nbsp;&nbsp;&nbsp; [EatStreet API](https://developers.eatstreet.com/endpoint/search)  <br/>&nbsp;&nbsp;&nbsp; [TasteDive Movie API ](https://tastedive.com/read/api)<br/>jQuery <br/>JavaScript <br/>HTML <br/>CSS <br/>   Visual Studio Code <br/>Git Hub -->
-
 
 
 ## Process
@@ -57,9 +55,6 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 ##### [> Initial User Stories<](https://docs.google.com/spreadsheets/d/1FB6xBWHgIpJLK6rlRdFN-CHQ4ed_Hvct-nbLKT8k22w/edit?usp=sharing) -->
 
 ### Version MVP (Minimal Viable Product)
-
-<!-- [>MVP<](https://chandahubbard.github.io/API%20Hack%20Capstone/index.html) -->
-
 #### Image of MVP Title Screen
 
 <!-- <img src="content/MVP1.png" alt="Image of MVP Title Screen" width="300">
