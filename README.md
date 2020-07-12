@@ -25,7 +25,7 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 
 #### Landing Page
 
-<img src="screens/landing.png" alt="Image of Landing page">
+<img src="screens/landing.png" alt="Image of Landing page" width="320px">
 
 #### Image of MVP Results Screen
 
