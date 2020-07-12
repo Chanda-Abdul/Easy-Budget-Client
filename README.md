@@ -19,6 +19,18 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 - Mocha, Chai & Supertest
 - Heroku
 
+## Summary
+
+<!-- <b>Dinner and a Movie</b> is a responsive web app that helps users decide where to order dinner and which movie to watch for a fun night in.  Users input their location and it is sent to the [EatStreet API Endpoint](https://developers.eatstreet.com/endpoint/search) to find restaurants that provide food delivery or pickup nearby. Users will then navigate to a screen where they can input a movie that they like so that they can receive similar movie recommendations using the [TasteDive Movie API Endpoint](https://tastedive.com/read/api)  -->
+
+#### Landing Page
+
+<img src="screens/landing.png" alt="Image of Landing page">
+
+#### Image of MVP Results Screen
+
+<img src="content/MVP6.png" alt="Image of MVP Results Screen" width="900"> -->
+
 ## Easy Budget API
 Link to the [API Repo](https://github.com/ChandaHubbard/easy-budget-app-api)
 <!-- 
@@ -28,44 +40,22 @@ Screenshot(s) of your app. This makes your app description much easier to unders
 A summary section. This should have a concise explanation of what your app does. Try to frame this from the standpoint of what the user does, or what the app enables for the user.
 A section on the technology used. -->
 <!-- 
-## Motivation
-<!-- 
-Sometimes you just want a nice relaxing night in, while ordering dinner and watching a good movie.  There are so many restaurants and movies to choose from, and it can be very hard to make a selection.  This app was created to help users avoid the decision paralysis that happens when they need to deicde on a resturaunt to eat at, or when they need to decide on a movie to watch. First, the user will input their location and the app will show the information for a takeout restaurant nearby.  Then the user will input a movie that they like and the app will show them a recommendation and trailer for a similar movie. -->
-
-
-## Summary
-
-<!-- <b>Dinner and a Movie</b> is a responsive web app that helps users decide where to order dinner and which movie to watch for a fun night in.  Users input their location and it is sent to the [EatStreet API Endpoint](https://developers.eatstreet.com/endpoint/search) to find restaurants that provide food delivery or pickup nearby. Users will then navigate to a screen where they can input a movie that they like so that they can receive similar movie recommendations using the [TasteDive Movie API Endpoint](https://tastedive.com/read/api)  -->
-
-
-
-## Built with:
-
-<!-- #### <br/>APIs <br/>&nbsp;&nbsp;&nbsp; [EatStreet API](https://developers.eatstreet.com/endpoint/search)  <br/>&nbsp;&nbsp;&nbsp; [TasteDive Movie API ](https://tastedive.com/read/api)<br/>jQuery <br/>JavaScript <br/>HTML <br/>CSS <br/>   Visual Studio Code <br/>Git Hub -->
-
-
 
 ## Process
 
 <!-- ##### [> Initial wireframes<](https://docs.google.com/document/d/16hyz31opJRNBHMy4-gDB9pLsdS5OK1MZCCaQCb7vhCo/edit?usp=sharing) -->
 
-### Wireframe images
+<!-- ### Wireframe images -->
 <!-- 
 <img src="content/wireframe.png" alt="Wireframe" width="400">
 
 ##### [> Initial User Stories<](https://docs.google.com/spreadsheets/d/1FB6xBWHgIpJLK6rlRdFN-CHQ4ed_Hvct-nbLKT8k22w/edit?usp=sharing) -->
-
-### Version MVP (Minimal Viable Product)
+<!-- 
+### Version MVP (Minimal Viable Product) -->
 
 <!-- [>MVP<](https://chandahubbard.github.io/API%20Hack%20Capstone/index.html) -->
 
-#### Image of MVP Title Screen
 
-<!-- <img src="content/MVP1.png" alt="Image of MVP Title Screen" width="300">
-
-#### Image of MVP Results Screen
-
-<img src="content/MVP6.png" alt="Image of MVP Results Screen" width="900"> -->
 
 ### Styling with a little bit of CSS
 
