@@ -1,27 +1,26 @@
-# Thinkful Full Stack Capstone - Easy Budget App
+# Thinkful Full Stack Capstone - Easy Budget App Client
 
-## Programmer
-Chanda Hubbard
+While enrolled in Thinkful's Web Development bootcamp I created this Full-stack Capstone project.  Easy budget is an interactive web application that was created to view and manage your monthly budget.  This app was created so that you can view all of your monthly expenses and figure out whether they align with your financial goals.
 
-# Full-Stack-Capstone
-While enrolled in Thinkful's Web Development bootcamp I created this Capstone project 
-
-
-[>Live URL<](https://easy-budget.chandacodes.vercel.app)
-
-
-[Link to API](https://github.com/ChandaHubbard/easy-budget-app-api)
+Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 
 # Technology Used
-React, Node.js, HTML, CSS, Vercel(Zeit), Heroku, VS Code
+### Front-end
+- React
+- HTML
+- CSS
+- Vercel(Zeit)
+- Sweet Alerts
 
+### Back-end
+- Node.js
+- Express
+- PostgreSQL
+- Mocha, Chai & Supertest
+- Heroku
 
-
-
-
-
-
-
+## Easy Budget API
+Link to the [API Repo](https://github.com/ChandaHubbard/easy-budget-app-api)
 <!-- 
 
 Documentation of your API.
