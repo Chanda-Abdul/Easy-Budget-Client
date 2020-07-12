@@ -64,6 +64,7 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 
 - Once the <b>Update Budget</b> button is clicked the app navigates to the `/create` page
 - Enter information for the new expense in the form and click the <b>Add Expense</b> button
+- The <b>Review your budget</b> button can be clicked to navigate back to the `/budget` page
 
 <img src="screens/addexpense.png" alt="Image of add xpense page" width="420px">
 
