@@ -23,13 +23,11 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 
 ### Back-end
 - Node.js
-    - Middleware
-        - CORS
 - Express
     - Knex
+    - Mocha, Chai & Supertest
 - PostgreSQL
     - Elephant SQL
-- Mocha, Chai & Supertest
 - Heroku
 
 ## Summary
@@ -68,7 +66,12 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 
 - Once the <b>Update Budget</b> button is clicked the app navigates to the `/create` page
 
+- Enter information for the new expense in the form and click the <b>Add Expense</b> button
+
 <img src="screens/addexpense.png" alt="Image of add xpense page" width="420px">
+
+- Once the <b>Add Expense</b> button has been click an alert will appear to let you know that the expense has been created. 
+
 <img src="screens/expensefeedback.png" alt="Image of Expense feedback alert" width="420px">
 
 #### Not Found screen

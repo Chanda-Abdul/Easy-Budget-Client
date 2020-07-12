@@ -2,6 +2,7 @@ import React from "react";
 import ExpenseService from "../../../services/ExpenseService";
 import ExpenseContext from "../../../contexts/ExpenseContext"
 import GoToBudgetButton from '../../buttons/GoToBudgetButton/GoToBudgetButton'
+import Swal from 'sweetalert2'
 
 export default class CreateExpensePage extends React.Component {
   static contextType = ExpenseContext
@@ -25,6 +26,14 @@ export default class CreateExpensePage extends React.Component {
     });
   };
 
+  expenseAlert() {
+    Swal.fire({
+      title: "Expense has been added!",
+      icon: "success",
+      button: "Aww yiss!",
+      })
+  }
+
   handleSubmit = (event, expenseId) => {
     event.preventDefault();
     const newExpenses = {
@@ -41,7 +50,7 @@ export default class CreateExpensePage extends React.Component {
       .catch((err) => {
         console.log(err, "error on createExpense");
       });
-      alert('Expense has been added!')
+      // alert(this.expenseAlert)
   };
 
   render() {
@@ -123,7 +132,7 @@ export default class CreateExpensePage extends React.Component {
                 </select>
               </div>
 
-              <button className="myButton" type="submit">
+              <button className="myButton" type="submit" onClick={this.expenseAlert}>
                 Add Expense
               </button>
             </fieldset>
