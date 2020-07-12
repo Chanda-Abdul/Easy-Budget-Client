@@ -1,5 +1,5 @@
 import React from "react";
-import LearnMoreButton from "../../buttons/LearnMoreButton/LearnMoreButton";
+// import LearnMoreButton from "../../buttons/LearnMoreButton/LearnMoreButton";
 import UpdateBudgetButton from "../../buttons/UpdateBudgetButton/UpdateBudgetButton";
 import BudgetTable from "../../BudgetTable/BudgetTable";
 import ExpenseContext from "../../../contexts/ExpenseContext";
@@ -8,7 +8,6 @@ export default class BudgetPage extends React.Component {
   static contextType = ExpenseContext;
 
   render() {
-    // const expenses = this.context;
     return (
       <ExpenseContext.Consumer>
         {(value) => (
@@ -18,11 +17,11 @@ export default class BudgetPage extends React.Component {
             <h1>Your Budget</h1>
 
             <h2>Review your expenses, and decide where you can cut back</h2>
-
             <section>
               <BudgetTable value={value} />
             </section>
-            <section>
+            {/* will implement in the future */}
+            {/* <section>
               <form className="" onSubmit={(e) => this.handleSubmit(e)}>
                 <fieldset name="budget-form">
                   <legend>An overview of your budget</legend>
@@ -39,11 +38,10 @@ export default class BudgetPage extends React.Component {
                   </div>
                 </fieldset>
               </form>
-            </section>
-
+            </section> */}
             <section>
               <UpdateBudgetButton />
-              <LearnMoreButton />
+              {/* <LearnMoreButton /> */}
             </section>
             <div className="banner-bottom" />
           </div>

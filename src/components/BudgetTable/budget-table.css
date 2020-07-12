@@ -1,4 +1,103 @@
-table, td {
+
+
+ /* media queries */
+@media only screen and (max-width: 360px) {
+    table, td {
+      border: .05rem solid #ADCE80;
+  }
+  /* Table */
+  
+  table {
+
+      height: 40%;
+      left: 10%;
+      margin: .1rem auto;
+      overflow-y: scroll;
+      position: static;
+      width: 80%;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      text-align: right;
+    }
+    
+    thead th {
+      background: #ADCE80;
+      color: black;
+      font-family: 'Amatic SC', cursive;
+      text-align: center;
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: .1rem;
+      text-transform: uppercase;
+    }
+    
+    tr {
+      background: white;
+      border-bottom: .1rem solid #ADCE80;
+      margin-bottom: .1rem;
+    
+    }
+    
+    th, td {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;
+      padding: .25rem;
+      
+      text-align: left;
+      width: 33.3333%;
+      color: black !important;
+      font-size: 1rem;
+    }
+  }
+
+
+@media only screen and (max-width: 720px) {
+  table, td {
+    border: .1rem solid #ADCE80;
+}
+/* Table */
+
+table {
+    height: 40%;
+    left: 10%;
+    margin: .25rem auto;
+    overflow-y: scroll;
+    position: static;
+    width: 80%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    text-align: right;
+  }
+  
+  thead th {
+    background: #ADCE80;
+    color: black;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+  }
+  
+  tr {
+    background: white;
+    border-bottom: .25rem solid #ADCE80;
+    margin-bottom: .25rem;
+  }
+  
+  th, td {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    padding: 1rem;
+    text-align: left;
+    width: 33.3333%;
+    color: black !important;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  table, td {
     border: .1rem solid #ADCE80;
 }
 /* Table */
@@ -40,5 +139,4 @@ table {
     color: black !important;
     text-align: right;
   }
-
- 
+}

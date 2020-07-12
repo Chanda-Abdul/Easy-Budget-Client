@@ -86,7 +86,7 @@ export default class BudgetTable extends React.Component {
                 {this.renderTable()}
               </tbody>
               {/* Table footer */}
-              <tfoot>
+              {/* <tfoot>
                 <tr>
                   <td></td>
                   <td></td>
@@ -94,7 +94,7 @@ export default class BudgetTable extends React.Component {
                   <td></td>
                   <td></td>
                 </tr>
-              </tfoot>
+              </tfoot> */}
             </table>
           </div>
         )}

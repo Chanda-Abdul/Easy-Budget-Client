@@ -5,13 +5,15 @@ export default class HowTo extends React.Component {
   render() {
     return (
       <div>
-        <h1>How it works</h1> 
+        <h2>How it works</h2> <img src={goals} alt="goals" className="image" height="250em" />
 <div className="info container">
         
 
-      <img src={goals} alt="goals" className="right" height="250em" />
-        <br /><h4>Track your expenses. The first step to gain control over your finances is to document your
-        expenses and see exactly where your money is going. Easy Budget makes it easy to record all your expenses, so that you can see exactly where your money is going</h4>
+      <br />
+        <br />
+        <p>Track your expenses. The first step to gain control over your finances is to document your
+        expenses and see exactly where your money is going. Easy Budget makes it easy to record all your expenses, so that you can see exactly where your money is going
+        </p>
         </div>
       </div>
       

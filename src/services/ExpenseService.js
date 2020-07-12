@@ -15,20 +15,12 @@ class ExpenseService {
 
   deleteExpense = (expenseId) => {
     //this is to delete expenses from database, in <budgetTable/>
-    console.log("We will delete expense with id", expenseId);
     return fetch(`${config.API_ENDPOINT}/expenses/${expenseId}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
       },
     })
-      .then((res) => {
-        console.log(res, "response");
-        return res;
-      })
-      .then((data) => {
-        console.log(data, "data from delete");
-      })
       .catch((error) => {
         console.error({ error });
       });

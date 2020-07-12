@@ -13,9 +13,10 @@ export default class HomePage extends React.Component {
       <section id="hero">
       <div className="header">
         <h1>Make budgeting easy</h1>
-          <p>Easy Budget helps you acheive financial freedom. 
+          <h3>Easy Budget helps you acheive financial freedom. 
             <br /> By tracking and recording expenses we make it 
-            <br />easier to reach your long-term financial goals.</p>
+            <br />easier to reach your long-term financial goals.
+        </h3>
             <GoToBudgetButton />
         </div> 
       </section>

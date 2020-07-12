@@ -128,6 +128,8 @@ export default class CreateExpensePage extends React.Component {
               </button>
             </fieldset>
           </form>
+          <br />
+          <GoToBudgetButton />
         </section>
         <div className="banner-bottom"></div>
       </div>
