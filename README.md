@@ -29,7 +29,16 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 <img src="screens/landing2.png" alt="Image of Landing page" width="420px">
 <img src="screens/landing3.png" alt="Image of Landing page" width="420px">
 <img src="screens/landing4.png" alt="Image of Landing page" width="420px">
+
+#### Signup Button
+
+From the landing page you can click the signup button to view an alert.  From there you can leave your email address to be notified of future app updates.  This alert was created with <b>Sweet Alerts</b>
+
 <img src="screens/signup.png" alt="Image of signup alert" width="420px">
+
+#### Review your budget screen
+
+From the landing page you can click the <b>Review your Budget</b> button to navigate to the `/expense` page.  On this page you can view your list of expenses in an <b>HTML table</b> that renders a database of expenses that were created with <b>PostgreSQL</b>.  The database is pre-populated with default expenses.  You can click the <b>Delete</b> button to remove expenses, and you can add expenses with the <b>Add an Expense</b> button to navigate to that screen.
 <img src="screens/expenses1.png" alt="Image of Expense Screen" width="420px">
 <img src="screens/expenses2.png" alt="Image of Expense Screen" width="420px">
 <img src="screens/addexpense.png" alt="Image of add xpense page" width="420px">
