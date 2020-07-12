@@ -125,10 +125,20 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 
 
 
-## Other features to implement in future versions
+<!-- ## Other features to implement in future versions -->
 
 <!-- [ ] Figure out how to handle edge cases for movie input
 <br/>
 [ ] Incorporate an additional API that will let the user know which streaming service currently offers their movie selection for viewing. -->
 
  -->
+
+## Scripts
+
+- To start the application enter `npm start` in the terminal
+
+- To run the test suite enter `npm test` in the terminal
+
+## Deployment
+
+- To deploy the app enter `npm run build` then `npm run deploy` in the terminal
