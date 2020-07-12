@@ -57,20 +57,18 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 - Click the <b>Delete</b> button to remove expenses.
 - Expenses can be added with the <b>Update Budget</b> button and then the app will navigate to the add and expense page.
 
-
-
 <img src="screens/expenses1.png" alt="Image of Expense Screen" width="420px">
 <img src="screens/expenses2.png" alt="Image of Expense Screen" width="420px">
 
 #### Create an expense screen
 
 - Once the <b>Update Budget</b> button is clicked the app navigates to the `/create` page
-
 - Enter information for the new expense in the form and click the <b>Add Expense</b> button
 
 <img src="screens/addexpense.png" alt="Image of add xpense page" width="420px">
 
 - Once the <b>Add Expense</b> button has been click an alert will appear to let you know that the expense has been created. 
+- This alert was created with <b>Sweet Alerts</b>
 
 <img src="screens/expensefeedback.png" alt="Image of Expense feedback alert" width="420px">
 
