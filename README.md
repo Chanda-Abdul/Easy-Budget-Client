@@ -37,7 +37,7 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 
 #### Signup Button
 
-- From the landing page you can click the signup button to view an alert.  
+- From the landing page click the signup button to view a signup alert.  
 - From there you can leave your email address to be notified of future app updates.  
 - This alert was created with <b>Sweet Alerts</b>
 
@@ -45,15 +45,26 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 
 #### Review your budget screen
 
-- From the landing page you can click the <b>Review your Budget</b> button to navigate to the `/expense` page.  
-- On this page a list of expenses can be viewed in an <b>HTML table</b> that renders a database of expenses which were created with <b>PostgreSQL</b>.  
+- From the landing page click the <b>Review your Budget</b> button to navigate to the `/budget` page.  
+- On this page a list of expenses can be viewed in a <b>HTML table</b> that renders a database of expenses which were created with <b>PostgreSQL</b>.  
 - The database is pre-populated with default expenses.  
 - Click the <b>Delete</b> button to remove expenses.
-- Expenses can be added with the <b>Add an Expense</b> button and then the app will navigate to the add and expense page.
+- Expenses can be added with the <b>Update Budget</b> button and then the app will navigate to the add and expense page.
+
+#### Create an expense screen
+
+- Once the <b>Update Budget</b> button is clicked the app navigates to the `/create` page
+
 <img src="screens/expenses1.png" alt="Image of Expense Screen" width="420px">
 <img src="screens/expenses2.png" alt="Image of Expense Screen" width="420px">
 <img src="screens/addexpense.png" alt="Image of add xpense page" width="420px">
 <img src="screens/expensefeedback.png" alt="Image of Expense feedback alert" width="420px">
+
+#### Not Found screen
+
+- If the user tries to navigate to a page that does not have a route `/*` the Not Found page will be displayed
+- This feature was created with <b>React Router</b>
+
 <img src="screens/notfound.png" alt="Image of 404 page" width="420px">
 
 ## Easy Budget API
