@@ -1,17 +1,34 @@
-# Full-Stack-Capstone
-While enrolled in Thinkful's Web Development bootcamp I created this Capstone project using React, Node.js, HTML, CSS, Vercel(Zeit), heroku, VS Code
-
 # Thinkful Full Stack Capstone - Easy Budget App
-
-
 
 ## Programmer
 Chanda Hubbard
 
-[>Live URL<](https://easy-budget.now.sh)
+# Full-Stack-Capstone
+While enrolled in Thinkful's Web Development bootcamp I created this Capstone project 
+
+
+[>Live URL<](https://easy-budget.chandacodes.vercel.app)
+
+
+[Link to API](https://github.com/ChandaHubbard/easy-budget-app-api)
+
+# Technology Used
+React, Node.js, HTML, CSS, Vercel(Zeit), Heroku, VS Code
 
 
 
+
+
+
+
+
+<!-- 
+
+Documentation of your API.
+Screenshot(s) of your app. This makes your app description much easier to understand.
+A summary section. This should have a concise explanation of what your app does. Try to frame this from the standpoint of what the user does, or what the app enables for the user.
+A section on the technology used. -->
+<!-- 
 ## Motivation
 <!-- 
 Sometimes you just want a nice relaxing night in, while ordering dinner and watching a good movie.  There are so many restaurants and movies to choose from, and it can be very hard to make a selection.  This app was created to help users avoid the decision paralysis that happens when they need to deicde on a resturaunt to eat at, or when they need to decide on a movie to watch. First, the user will input their location and the app will show the information for a takeout restaurant nearby.  Then the user will input a movie that they like and the app will show them a recommendation and trailer for a similar movie. -->
@@ -24,9 +41,6 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 
 
 ## Built with:
-
-#### 
-<!-- <br/>APIs <br/>&nbsp;&nbsp;&nbsp; [EatStreet API](https://developers.eatstreet.com/endpoint/search)  <br/>&nbsp;&nbsp;&nbsp; [TasteDive Movie API ](https://tastedive.com/read/api)<br/>jQuery <br/>JavaScript <br/>HTML <br/>CSS <br/>   Visual Studio Code <br/>Git Hub-->
 
 
 
@@ -41,9 +55,6 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 ##### [> Initial User Stories<](https://docs.google.com/spreadsheets/d/1FB6xBWHgIpJLK6rlRdFN-CHQ4ed_Hvct-nbLKT8k22w/edit?usp=sharing) -->
 
 ### Version MVP (Minimal Viable Product)
-
-<!-- [>MVP<](https://chandahubbard.github.io/API%20Hack%20Capstone/index.html)-->
-
 #### Image of MVP Title Screen
 
 <!-- <img src="content/MVP1.png" alt="Image of MVP Title Screen" width="300">
@@ -116,4 +127,4 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 <br/>
 [ ] Incorporate an additional API that will let the user know which streaming service currently offers their movie selection for viewing. -->
 
-
+ -->

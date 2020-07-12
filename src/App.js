@@ -1,38 +1,43 @@
-import React from 'react';
-import NavBar from './components/NavBar/nav-bar';
-import MainPage from './components/MainPage/main-page';
-import BudgetPage from './components/BudgetPage/budget-page'
-import DashboardPage from './components/DashboardPage/dash-board'
-import UpdatePage from './components/UpdatePage/update-page'
-import EducationPage from './components/EducationPage/education-page'
-import Footer from './components/Footer/footer'
-import { Switch, Route } from 'react-router-dom';
+import React from "react";
+import ExpenseContext from "./contexts/ExpenseContext";
+import Routes from "./routes/Routes";
+import Navigation from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
+import ExpenseService from "./services/ExpenseService";
 
-export default function App(props) {
-  return (
-    <div className="app">
-      <Switch>
-        <Route path="/" component={NavBar}/>     
-      </Switch>
-      <Switch>
-        <Route exact path="/" component={MainPage}/>
-      </Switch>
-      <Switch>
-        <Route exact path="/makebudget" component={BudgetPage}/>
-      </Switch>
-      <Switch>
-        <Route exact path="/dashboard" component={DashboardPage}/>
-      </Switch>
-      <Switch>
-        <Route exact path="/update" component={UpdatePage}/>
-      </Switch>
-      <Switch>
-        <Route exact path="/education" component={EducationPage}/>
-      </Switch>
-      <Switch>
-        <Route path="/" component={Footer}/>
-      </Switch>
-    </div>
-  );
+export default class App extends React.Component {
+  static contextType = ExpenseContext
+  
+  constructor(props) {
+    super(props);
+    this.expenseService = new ExpenseService();
+  }
+  state = {
+    expenses: null,
+  };
+
+  async componentDidMount() {
+    const expenses = await this.expenseService.getAllExpenses();
+    this.setState({
+      expenses,
+    });
+  }
+  setExpenses = (expenses) => {
+    this.setState({ expenses: expenses });
+  };
+
+  render() {
+    const value = {
+      expenses: this.state.expenses,
+      setExpenses: this.setExpenses,
+    };
+
+    return (
+      <ExpenseContext.Provider value={value}>
+        <Navigation />
+        <Routes />
+        <Footer />
+      </ExpenseContext.Provider>
+    );
+  }
 }
-
