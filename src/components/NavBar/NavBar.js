@@ -11,9 +11,6 @@ export default class Navigation extends React.Component {
         <div className="topnav left">
           <Link to="/">Easy Budget</Link>
         </div>
-        {/* <div className="topnav right btn">
-          <DemoButton />
-        </div> */}
         <div className="topnav right btn">
           <SignUpButton />
         </div>

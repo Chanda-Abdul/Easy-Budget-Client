@@ -50,7 +50,6 @@ export default class CreateExpensePage extends React.Component {
       .catch((err) => {
         console.log(err, "error on createExpense");
       });
-      // alert(this.expenseAlert)
   };
 
   render() {
