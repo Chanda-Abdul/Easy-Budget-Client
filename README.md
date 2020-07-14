@@ -52,10 +52,12 @@ A summary section. This should have a concise explanation of what your app does.
     - I would like to see what a typical budget looks like
 - As a returning user
     - I would like to review my current budget
+
 <b>Create an expense screen</b>
 
 - As a returning user
     - I would like to add a new expense to my budget
+
 <b>Not Found screen</b>
 
 - As a new user AND As a returning user
@@ -63,7 +65,7 @@ A summary section. This should have a concise explanation of what your app does.
 
 ## React Component Structure
 - index.js (stateless)
-    - src/App.js(stateful)
+    - src/App.js(statefull)
         - NavBar.js
             - SignupButton.js
         - Homepage.js
@@ -126,20 +128,4 @@ A summary section. This should have a concise explanation of what your app does.
 # 
 
 ## Easy Budget API
-Link to the [API Repo](https://github.com/ChandaHubbard/easy-budget-app-api)
-<!-- 
-
-Documentation of your API.
-
-
- -->
-
-## Scripts
-
-- To start the application enter `npm start` in the terminal
-
-- To run the test suite enter `npm test` in the terminal
-
-## Deployment
-
-- To deploy the app enter `npm run build` then `npm run deploy` in the terminal
+Link to the [API Repo](https://github.com/ChandaHubbard/easy-budget-app-api) with API Documentation
