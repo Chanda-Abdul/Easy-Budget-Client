@@ -2,7 +2,9 @@
 
 ## Programmer
 Chanda Hubbard
-# 
+
+## Summary
+
 While enrolled in Thinkful's Web Development bootcamp I created this Full-stack Capstone project.  Easy budget is an interactive web application that was created to view and manage your monthly budget.  This app was created so that you can view all of your monthly expenses and figure out whether they align with your financial goals.
 
 Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
@@ -26,14 +28,6 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 - PostgreSQL
     - Elephant SQL
 - Heroku
-
-# 
-
-## Summary
-
-A summary section. This should have a concise explanation of what your app does. Try to frame this from the standpoint of what the user does, or what the app enables for the user
-
-<!-- <b>Dinner and a Movie</b> is a responsive web app that helps users decide where to order dinner and which movie to watch for a fun night in.  Users input their location and it is sent to the [EatStreet API Endpoint](https://developers.eatstreet.com/endpoint/search) to find restaurants that provide food delivery or pickup nearby. Users will then navigate to a screen where they can input a movie that they like so that they can receive similar movie recommendations using the [TasteDive Movie API Endpoint](https://tastedive.com/read/api)  -->
 
 ## User Stories 
 
