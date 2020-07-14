@@ -35,6 +35,48 @@ A summary section. This should have a concise explanation of what your app does.
 
 <!-- <b>Dinner and a Movie</b> is a responsive web app that helps users decide where to order dinner and which movie to watch for a fun night in.  Users input their location and it is sent to the [EatStreet API Endpoint](https://developers.eatstreet.com/endpoint/search) to find restaurants that provide food delivery or pickup nearby. Users will then navigate to a screen where they can input a movie that they like so that they can receive similar movie recommendations using the [TasteDive Movie API Endpoint](https://tastedive.com/read/api)  -->
 
+## User Stories 
+
+<b>Landing Page</b>
+
+- As a new user
+    - I want to understand what this app does and if it will be useful for me.
+    - I would like to create a budget
+- As a returning user
+    - I would like to learn more about finances
+    - I would like to update my budget
+
+<b>Review your budget Screen</b>
+
+- As a new user
+    - I would like to see what a typical budget looks like
+- As a returning user
+    - I would like to review my current budget
+<b>Create an expense screen</b>
+
+- As a returning user
+    - I would like to add a new expense to my budget
+<b>Not Found screen</b>
+
+- As a new user AND As a returning user
+    - I would like to know that the page I navigated to does not exist 
+
+## React Component Structure
+- index.js (stateless)
+    - src/App.js(stateful)
+        - NavBar.js
+            - SignupButton.js
+        - Homepage.js
+            - GoToBudgetButton.js
+                - BudgetPage.js
+                - UpdateBudgetButton.js
+                    - CreateExpensePage.js
+                        - GoToBudgetButton.js
+            - Overview.js
+            - HowTo.js
+            - ProgressSection.js
+        - Footer.js
+
 #### Landing Page
 
 <img src="screens/landing.png" alt="Image of Landing page" width="420px">
