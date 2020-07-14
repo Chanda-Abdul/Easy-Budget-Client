@@ -73,6 +73,8 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
             - ProgressSection.js
         - Footer.js
 
+# 
+
 #### Landing Page
 
 <img src="screens/landing.png" alt="Image of Landing page" width="420px">
