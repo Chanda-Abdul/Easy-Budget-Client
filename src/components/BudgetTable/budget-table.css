@@ -1,92 +1,103 @@
+.table-container {
+  overflow: auto;
+}
 
-
- /* media queries */
-@media only screen and (max-width: 360px) {
-    table, td {
-      border: .05rem solid #ADCE80;
+/* media queries */
+@media only screen and (min-width: 320px) {
+  table,
+  td {
+    border: 0.05rem solid #adce80;
   }
   /* Table */
-  
-  table {
 
-      height: 40%;
-      left: 10%;
-      margin: .1rem auto;
-      overflow-y: scroll;
-      position: static;
-      width: 80%;
-      font-family: 'Josefin Sans', sans-serif;
-      font-weight: 400;
-      text-align: right;
-    }
-    
-    thead th {
-      background: #ADCE80;
-      color: black;
-      font-family: 'Amatic SC', cursive;
-      text-align: center;
-      font-size: 1.75rem;
-      font-weight: 700;
-      letter-spacing: .1rem;
-      text-transform: uppercase;
-    }
-    
-    tr {
-      background: white;
-      border-bottom: .1rem solid #ADCE80;
-      margin-bottom: .1rem;
-    
-    }
-    
-    th, td {
-      font-family: 'Josefin Sans', sans-serif;
-      font-weight: 300;
-      padding: .25rem;
-      
-      text-align: left;
-      width: 33.3333%;
-      color: black !important;
-      font-size: 1rem;
-    }
+  .invisible {
+    display: none;
   }
 
-
-@media only screen and (max-width: 720px) {
-  table, td {
-    border: .1rem solid #ADCE80;
-}
-/* Table */
-
-table {
+  table {
     height: 40%;
     left: 10%;
-    margin: .25rem auto;
+    margin: 0.1rem auto;
     overflow-y: scroll;
     position: static;
     width: 80%;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.3rem;
+    text-align: right;
+    overflow: scroll;
+  }
+
+  thead th {
+    background: #adce80;
+    color: black;
+    font-family: "Amatic SC", cursive;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+
+  tr {
+    background: white;
+    border-bottom: 0.1rem solid #adce80;
+    margin-bottom: 0.1rem;
+  }
+
+  th,
+  td {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    padding: 0.25rem;
+
+    text-align: left;
+    width: 33.3333%;
+    color: black !important;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  table,
+  td {
+    border: 0.1rem solid #adce80;
+  }
+  /* Table */
+ 
+
+
+  table {
+    height: 40%;
+    left: 10%;
+    margin: 0.25rem auto;
+    overflow-y: scroll;
+    position: static;
+    width: 80%;
+    font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
     text-align: right;
   }
-  
+
   thead th {
-    background: #ADCE80;
+    background: #adce80;
     color: black;
-    font-family: 'Amatic SC', cursive;
+    font-family: "Amatic SC", cursive;
     font-size: 1.75rem;
     font-weight: 700;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
   }
-  
+
   tr {
     background: white;
-    border-bottom: .25rem solid #ADCE80;
-    margin-bottom: .25rem;
+    border-bottom: 0.25rem solid #adce80;
+    margin-bottom: 0.25rem;
   }
-  
-  th, td {
-    font-family: 'Josefin Sans', sans-serif;
+
+  th,
+  td {
+    font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
     padding: 1rem;
     text-align: left;
@@ -96,42 +107,44 @@ table {
   }
 }
 
-@media only screen and (min-width: 720px) {
-  table, td {
-    border: .1rem solid #ADCE80;
-}
-/* Table */
+@media only screen and (min-width: 960px) {
+  table,
+  td {
+    border: 0.1rem solid #adce80;
+  }
+  /* Table */
 
-table {
+  table {
     height: 40%;
     left: 10%;
     margin: 1rem auto;
     overflow-y: scroll;
     position: static;
     width: 80%;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
     text-align: right;
   }
-  
+
   thead th {
-    background: #ADCE80;
+    background: #adce80;
     color: black;
-    font-family: 'Amatic SC', cursive;
+    font-family: "Amatic SC", cursive;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: .25rem;
+    letter-spacing: 0.25rem;
     text-transform: uppercase;
   }
-  
+
   tr {
     background: white;
-    border-bottom: .25rem solid #ADCE80;
-    margin-bottom: .25rem;
+    border-bottom: 0.25rem solid #adce80;
+    margin-bottom: 0.25rem;
   }
-  
-  th, td {
-    font-family: 'Josefin Sans', sans-serif;
+
+  th,
+  td {
+    font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
     padding: 1rem;
     text-align: left;
