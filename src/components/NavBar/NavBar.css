@@ -1,7 +1,7 @@
 nav {
   background-color: #8dc53f;
   position: fixed;
-  color: white;
+  color: #004138;
   top: 0;
   left: 0;
   right: 0;
@@ -26,7 +26,7 @@ nav {
 }
 
 a {
-  color: white;
+  color: #004138;
   text-decoration: none;
 }
 

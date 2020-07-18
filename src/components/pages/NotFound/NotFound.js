@@ -7,7 +7,7 @@ export default class NotFoundPage extends React.Component {
             <div>
                 <div className="banner-top" />
             
-                <h2>Sorry, page not found!</h2>
+                <h1>Sorry, page not found!</h1>
                 <p>Oops, the page does not exist. Try going back or using the navigation menu</p>
                 
                 <img className="notfound" src={notfound} alt="404"/>
