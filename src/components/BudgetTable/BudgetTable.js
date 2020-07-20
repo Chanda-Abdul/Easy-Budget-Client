@@ -42,9 +42,12 @@ export default class BudgetTable extends React.Component {
             <td>{moment(expense.date).format("MMMM D")}</td>
             <td>{expense.name}</td>
             <td>{expense.amount}</td>
-            <td className="invisible">{expense.type}</td>
+            <td 
+            // className="invisible"
+            >{expense.type}</td>
             <td
-             className="invisible">{expense.category}</td>
+            //  className="invisible"
+             >{expense.category}</td>
             <td>
               <button
                 onClick={(event) => this.handleDelete(event, expense.id)}
@@ -77,8 +80,12 @@ export default class BudgetTable extends React.Component {
                   <th scope="col" >Date</th>
                   <th scope="col">Expense</th>
                   <th scope="col">Amount</th>
-                  <th scope="col" className="invisible">Type</th>
-                  <th scope="col" className="invisible">Category</th>
+                  <th scope="col" 
+                  // className="invisible"
+                  >Type</th>
+                  <th scope="col" 
+                  // className="invisible"
+                  >Category</th>
                   <th scope="col"> </th>
                 </tr>
               </thead>

@@ -125,3 +125,10 @@ Link to the [Live URL application](https://easy-budget.chandacodes.vercel.app)
 
 ## Easy Budget API
 Link to the [API Repo](https://github.com/ChandaHubbard/easy-budget-app-api) with API Documentation
+
+
+## Other features to implement in future versions
+
+[ ] Incorporate the `/PATCH` endpoint into the client. 
+[ ] Add bootstrap
+[ ] Make <BudgetTable/> responsive

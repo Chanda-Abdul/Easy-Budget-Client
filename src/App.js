@@ -13,7 +13,7 @@ export default class App extends React.Component {
     this.expenseService = new ExpenseService();
   }
   state = {
-    expenses: null,
+    expenses: [],
   };
 
   async componentDidMount() {
