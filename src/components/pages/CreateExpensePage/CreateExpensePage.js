@@ -125,6 +125,7 @@ export default class CreateExpensePage extends React.Component {
                   onChange={this.onInputChange}
                   required
                 >
+                  {/* not values, is that the issue? */}
                   <option value="Recurring">Recurring</option>
                   <option value="Savings">Savings</option>
                   <option value="Discretionary">Discretionary</option>

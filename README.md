@@ -132,3 +132,4 @@ Link to the [API Repo](https://github.com/ChandaHubbard/easy-budget-app-api) wit
 [ ] Incorporate the `/PATCH` endpoint into the client. 
 [ ] Add bootstrap
 [ ] Make <BudgetTable/> responsive
+    <!-- [ ]  have the table inside a container with a particular class, and change the margins , font size, padding etc when the view ports get smaller -->
